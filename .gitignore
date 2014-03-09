@@ -1,8 +1,8 @@
-# Compilation logs
+# Output LaTeX files
+*.aux
+*.dvi
+*.pdf
 *.log
 
-# PDF output
-*.pdf
-
-# Auxiliar LaTeX files
-*.aux
+# Currently editing files
+*.sw[op]
