@@ -1,0 +1,8 @@
+# Compilation logs
+*.log
+
+# PDF output
+*.pdf
+
+# Auxiliar LaTeX files
+*.aux
