@@ -1,3 +1,4 @@
+# Output LaTeX files
 *.acn
 *.acr
 *.alg
@@ -30,3 +31,7 @@
 *.vrb
 *.xdy
 *.tdo
+*.pdf
+
+# Currently editing files
+*.sw[op]
