@@ -7,12 +7,15 @@
 \usepackage{mathtools}
 \usepackage{amssymb}
 \usepackage{listings}
+\everymath{\displaystyle}
 \begin{document}
 
   \title{Machine Learning course on Coursera summarization}
   \author{Ariel Gerardo Ríos}
   \date{}
   \maketitle
+
+  \tableofcontents
 
   \chapter{Begining}
     \section{Machine learning definition}
@@ -449,6 +452,97 @@
         Example:
 
         $B_{12} = A_{21} = 2$
+
+  \chapter{Linear regression with multiple variables}
+
+    \section{Multiple features}
+
+      \begin{center}
+        \begin{tabular}{ | l | l | l | l | l | }
+          \hline
+          Size in feet$^2$ ($x$) & Number of bedrooms & Number of floors & Age of home (years) & Price in \$1000's ($y$) \\ \hline
+          2104 & 5 & 1 & 45 & 460 \\ \hline
+          1416 & 3 & 2 & 40 & 232 \\ \hline
+          1534 & 3 & 2 & 30 & 315 \\ \hline
+          852  & 2 & 1 & 36 & 178 \\ \hline
+          \ldots & \ldots & \dots & \dots & \ldots \\ \hline
+        \end{tabular}
+      \end{center}
+
+      \textbf{Notation}:
+      \begin{itemize}
+        \item $n$ = number of features
+        \item $x^{(i)}$ = input (features) of $i^{th}$ training example.
+        \item $x^{(i)}_{j}$ = value of feature $j$ in $i^{th}$ training example.
+      \end{itemize}
+
+      $n = 4$
+      $m = 47$
+
+      $x^{(2)} = 
+      \begin{bmatrix}
+        1416 \\
+        3 \\
+        2 \\
+        40 \\
+      \end{bmatrix}$
+
+      $x^{(2)}_3 = 2$
+
+      \subsubsection{Hypothesis}
+
+        $h_{\theta}(x) = \theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} + \ldots + \theta_{n}x_{n}$
+
+        For convenience of notation, define $x_{0} = 1$.
+
+        $x =
+        \begin{bmatrix}
+          x_{0} \\
+          x_{1} \\
+          x_{2} \\
+          \vdots \\
+          x_{n} \\
+        \end{bmatrix}
+        \in \mathbb{R}^{n+1}
+        \ \ \ \ \ 
+        \theta = 
+        \begin{bmatrix}
+          \theta_{0} \\
+          \theta_{1} \\
+          \theta_{2} \\
+          \vdots \\
+          \theta_{n} \\
+        \end{bmatrix}
+        \in \mathbb{R}^{n+1}$
+
+        $h_{\theta}(x) = \theta_{0}x_{0} + \theta_{1}x_{1} + \ldots + \theta_{n}x_{n} = \theta^{T}x =
+        \begin{bmatrix}
+          \theta_{0} & \theta_{1} & \theta_{2} & \vdots & \theta_{n}
+        \end{bmatrix}
+        \begin{bmatrix}
+          x_{0} \\
+          x_{1} \\
+          x_{2} \\
+          \vdots \\
+          x_{n} \\
+        \end{bmatrix}$
+
+        Also named \textbf{Multivariate linear regression}.
+
+    \section{Gradient descent for multiple variables}
+
+      \begin{itemize}
+        \item Hypothesis: $h_{\theta}(x) = \theta^{T}x = \theta_{0}x_{0} + \theta_{1}x_{1} + \ldots + \theta_{n}x_{n}$
+        \item Parameters: $\theta_{0}, \theta_{1}, \ldots, \theta_{n}$
+        \item Cost function: $J(\theta_{0}, \theta_{1}, \ldots, \theta_{n}) = J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_{0}(x^{(i)}) - y^{(i)})^{2}$
+        \item Gradient descent:
+
+            Repeat \{
+
+                \hspace{1cm} $\theta_{j} := \theta_{j} - \alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0}, \ldots, \theta_{n}) = \theta_{j} - \alpha\frac{\partial}{\partial\theta_{j}}J(\theta) = \theta_{j} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})) - y^{(i)})x^{(i)}_{j}$
+
+            \} \ \ (simultaneously update for every $j = 0, \ldots, n$)
+      \end{itemize}
 
 
 \end{document}
