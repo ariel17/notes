@@ -534,7 +534,7 @@
       \begin{itemize}
         \item Hypothesis: $h_{\theta}(x) = \theta^{T}x = \theta_{0}x_{0} + \theta_{1}x_{1} + \ldots + \theta_{n}x_{n}$
         \item Parameters: $\theta_{0}, \theta_{1}, \ldots, \theta_{n}$
-        \item Cost function: $J(\theta_{0}, \theta_{1}, \ldots, \theta_{n}) = J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_{0}(x^{(i)}) - y^{(i)})^{2}$
+        \item Cost function: $J(\theta_{0}, \theta_{1}, \ldots, \theta_{n}) = J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y^{(i)})^{2}$
         \item Gradient descent:
 
             Repeat \{
@@ -543,6 +543,131 @@
 
             \} \ \ (simultaneously update for every $j = 0, \ldots, n$)
       \end{itemize}
+
+    \section{Gradient descent for multiple variables}
+
+      \begin{itemize}
+        \item Hypothesis: $h_{\theta}(x) = \theta^{T}_{x} = \theta_{0}x_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} + \ldots + \theta_{n}x_{n}$
+        \item Parameters: $\theta_{0}, \theta_{1}, \ldots, \theta_{n} = \theta$ \ \ ($n+1$-dimensional vector
+        \item Cost function: $J(\theta_{0}, \theta_{1}, \ldots, \theta_{n}) = J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y^{(i)})^{2}$
+        \item Gradient descent:
+        
+          Repeat \{
+
+            \hspace{1cm} $\theta_{j} := \theta_{j} - \alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0}, \ldots, \theta_{n}) = \theta_{j} - \alpha\frac{\partial}{\partial\theta_{j}}J(\theta)$
+
+         \} \ \ \ (simultaneously update for every $j = 0, \ldots, n$)
+      \end{itemize}
+
+      Developing the derivate for $n \geq 1$:
+
+      Repeat \{
+
+      \hspace{1cm} $\theta_{j} := \theta_{j} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y^{i}x^{(i)}_{j}$
+
+      \} \ \ \ (simultaneously update $\theta_{j}$ for $j = 0, \ldots, n$)
+
+    \section{Gradient descent in practice I: Feature scaling}
+
+      \subsection{Make sure features are on similar scale}
+        
+        Example:
+
+        $x_{1}$ = size ($0-2000 feet^{2}$)
+
+        $x_{2}$ = number of bedrooms ($1-5$)
+
+        The elipses can be very skiny and gradient descent can take a lot of time to reach the local minimum.
+
+        $x_{1} = \frac{size (feet^{2})}{2000} \implies 0 \leq x_{1} \leq 1$
+        
+        $x_{2} = \frac{number of bedrooms}{5} \implies 0 \leq x_{2} \leq 1$
+
+        The elipses are now less tall and the convergence can be reached much faster.
+
+      \subsection{Get every feature approximately a $-1 \leq x_{i} \leq 1$}
+
+      $0 \leq x_{1} \leq 3 \checkmark$
+
+      $-2 \leq x_{1} \leq 0.5 \checkmark$
+
+      $-100 \leq x_{1} \leq 100 \text{\sffamily X}$
+
+      \subsection{Mean normalization}
+
+      Replace $x_{i}$ with $x_{i} - \mu_{i}$ to make features have approximately zero mean (do not apply to $x_{0} = 1$).
+
+      Example:
+
+      $x_{1} = \frac{size - 1000}{2000}$ \ \ Average: $size = 100$
+
+      $x_{2} = \frac{\#bedrooms - 2}{5}$ \ \ $1 - 5$ bedrooms
+
+      $-0.5 \leq x_{1} \leq 0.5, -0.5 \leq x_{2} \leq 0.5$
+
+      Generally:
+
+      $x_{i} = \frac{x_{i} - \mu{i}}{s_{i}}$
+
+      $\mu_{i}$ = average value of $x_{i}$ in training set.
+
+      $s_{i}$ = range of values ($max - min$, or standard deviation).
+
+    \section{Gradient descent in practice II: learning rate}
+
+      \subsection{Making sure gradient descent is working correctly}
+
+        Example automatic convergence test:
+
+        Declare convergence if $J(\theta)$ decrases by less than $10^{-3}$ in one iteration.
+
+        If plot graphic is increasing, then the algorithm is not working. \textbf{Use a smaller $\alpha$}.
+
+        \subsubsection{Facts}
+
+          \begin{itemize}
+            \item For sufficiently small $\alpha$, $J(\theta)$ should decrease on every iteration.
+            \item But if $\alpha$ is too small, gradient descent can be slow to converge.
+          \end{itemize}
+
+        \subsubsection{Recomendation}
+
+          To choose $\alpha$, try:
+
+          $\ldots, 0.001, 0.01, 0.1, 1, \ldots$ \ \ Factors of it
+
+          To make sure that a value is too short or a value is too large.
+
+    \section{Features and polynomial regression}
+
+      \subsection{Changing to new features}
+
+        $h_{\theta}(x) = \theta_{0} + \theta_{1} \times frontage + \theta_{2} \times depth$
+
+        $frontage = x_{1}, depth = x_{2} \implies area = frontage \times depth$
+
+        $h_{\theta}(x) = \theta_{0} + \theta_{1}area$
+
+      \subsection{Polynomial regression}
+
+        Price = y
+        Size = x
+
+        Using $\theta_{0} + \theta_{1}x + \theta_{2}x^{2}$ may match the initial value but the cuadratic function tends to back to zero, so it is not the behavior expected for increasing values.
+
+        Changing the model to a cubic function:
+
+        $h_{\theta}(x) = \theta_{0} + \theta_{1}x + \theta_{2}x^{2} + \theta_{3}x_{3} = \theta_{0} + \theta_{1}(size) + \theta_{2}(size)^{2} + \theta_{3}(size)^{3}$
+
+        Scaling features is important because values can be increase quickly.
+
+        Other solution can be:
+
+        $h_{\theta}(x) = \theta_{0} + \theta_{1}(size) + \theta_{2}\sqrt{size}$
+
+    \section{Normal equation}
+
+      
 
 
 \end{document}
