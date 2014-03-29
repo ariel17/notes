@@ -667,7 +667,58 @@
 
     \section{Normal equation}
 
+      It is a method to solve for $\theta$ analytically.
+
+      \subsection{Intuition}
       
+        \subsubsection{If 1D ($\theta \in \mathbb{R}$)}
+
+          $J(\theta) = a\theta^{2} + b\theta + c$
+
+          Obtaining the minimum: solve for $\frac{\partial}{\partial\theta}J(\theta) = \ldots = 0$
+
+        \subsubsection{If nD ($\theta \in \mathbb{R}^{n+1}$)}
+
+          $J(\theta_{0}, \theta_{1}, \ldots, \theta_{m}) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}$
+
+          Obtaining the minimum: solve for $\frac{\partial}{\partial\theta}J(\theta) = \ldots = 0$ \ \ (for every $j$)
+
+          Solve for $\theta_{0}, \theta_{1}, \ldots, \theta_{n}$
+
+        \subsubsection{Example}
+
+          $m = 4$
+
+          \begin{tabular}{ | c | c | c | c | c | c |}
+            \  & Size ($feet^{2}$) & Number of bedrooms & Number of floors & Age of home (years) & Price (\$1000) \\
+            $x_{0}$ & $x_{1}$ & $x_{2}$ & $x_{3}$ & $x_{4}$ & y \\ \hline
+            1 & 2104 & 5 & 1 & 45 & 460 \\ \hline
+            1 & 1416 & 3 & 2 & 40 & 232 \\ \hline
+            1 & 1534 & 3 & 2 & 30 & 315 \\ \hline
+            1 & 852 & 2 & 1 & 36 & 178 \\ \hline
+          \end{tabular}
+
+          Using the values from features to create the $X$ matrix:
+
+          $X =
+          \begin{bmatrix}
+            1 & 2104 & 5 & 1 & 45 \\
+            1 & 1416 & 3 & 2 & 40 \\
+            1 & 1534 & 3 & 2 & 30 \\
+            1 & 852 & 2 & 1 & 36  \\
+          \end{bmatrix} \ \ \ m \times (n+1)$
+
+          And using the values on last column to create the vector $y$:
+
+          $X =
+          \begin{bmatrix}
+            460 \\
+            232 \\
+            315 \\
+            178 \\
+          \end{bmatrix} \ \ \ m-dimensional vector$
+
+          \textbf{$\theta = (X^{T}X)^{-1}X^{T}y \ \ \Leftarrow The value of \theta that minimize the cost function.$}
 
 
 \end{document}
