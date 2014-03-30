@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+org.eclim.java.import.exclude=["^com.sun..*","^sunw?..*"]
+org.eclim.java.run.mainclass=ar.com.ariel17.fibonacci.Fibonacci
+org.eclim.user.email=ariel.gerardo.rios@gmail.com
+org.eclim.user.name=ariel17
