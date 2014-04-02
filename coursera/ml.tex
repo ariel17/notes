@@ -720,7 +720,65 @@
             178 \\
           \end{bmatrix} \ \ \ m-dimensional vector$
 
-          \textbf{$\theta = (X^{T}X)^{-1}X^{T}y \ \ \Leftarrow The value of \theta that minimize the cost function.$}
+          $\theta = (X^{T}X)^{-1}X^{T}y \ \ \Leftarrow$ The value of $\theta$ that minimize the cost function.
 
+        \subsubsection{When to use Gradient Descent or Normal Ecuation}
+
+          For $m$ training examples, $n$ features:
+
+          \textbf{Gradient Descent}
+          \begin{itemize}
+            \item Need to choose $\alpha$.
+            \item Needs many iterations.
+            \item Works well even when $n$ is large.
+          \end{itemize}
+
+          \textbf{Normal Ecuation}
+          \begin{itemize}
+            \item No need to choose $\alpha$.
+            \item Don't need toiterate.
+            \item Slow if $n$ is very large.
+          \end{itemize}
+
+    \section{Normal equation and non-invertibility}
+
+      \subsection{What if $X^{T}T$ is non-invertible?}
+        
+        \begin{itemize}
+          \item Redundant features (linearly dependent): e.g. $x_{1} = size in feet^{2}; x_{2} = size in m^{2}$
+          \item Too many features (e.g. $m \leq n$): delete some features or use regularization.
+        \end{itemize}
+
+  \chapter{Logistic Regression}
+
+    \section{Classification}
+
+      $y \in {0, 1}$
+
+      Using plain linear regression applied to a classification problem usually
+      is not a good idea.
+
+      \subsection{Consecuences}
+
+        $h_{\theta}(x)$ can be $> 1$ or $< 0$
+
+        A Logistic Regression alternative must be used to contain:
+        
+        $0 \leq h_{\theta}(x) \leq 1$
+          
+    \section{Hypothesis Representation}
+
+      \subsection{Logistic Regression Model}
+        Want $0 \leq h_{\theta}(x) \leq 1$:
+
+        $h_{\theta}(x) = g(\theta^{T}x) \and g(z) = \frac{1}{1+e^{-z}} \Rightarrow g(z) = \frac{1}{1+e^{-\theta^{T}x}}$
+
+        $g(z)$ is the \textbf{Sigmoid function} or textbf{Logistic function}.
+
+      \subsection{Interpretation of Hypothesis Output}
+
+        $h_{\theta}(x) =$ estimated probability that $y = 1$ on input $x$
+
+        
 
 \end{document}
