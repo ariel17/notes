@@ -74,3 +74,20 @@ Ejercicios
 * Señalar en los articulos 78 y siguientes de formacion de las leyes lo que
   dice el cuadro de formación de leyes (pág. 24 y 25).
 * Leer los capítulos 4, 5  
+
+Dudas del capítulo 4
+--------------------
+* El domicilio que tenía el difunto determina el lugar en que se abre su
+  sucesión.
+* Domicilio: Art. 90, 8vo:
+  > Los mayores de edad que sirven, o trabajan, o que están agregados en casa
+  > de otros, tienen el domicilio de la persona a quien sirven, o para quien
+  > trabajan, siempre que residan en la misma casa, o en habitaciones
+  > accesorias, con excepción de la mujer casada, que, como obrera doméstica,
+  > habita otra casa que la de su marido...
+  ¿Sólo se aplica a la mujer?
+* Emancipación: Art. 134, 1ro:
+  > Los emancipados no pueden ni con autorización judicial: hacer donación de
+  > bienes que ubiesen recibido a título gratuito.
+  ¿A qué se refiere?
+* Patrimonio: ¿Por qué *es necesario* un patrimonio?
