@@ -232,354 +232,350 @@ Matrix-vector multiplication
 
    r_{31} = 2 \times 1 + 1 \times 5 = 7
 
-The multiplication of matrix with different dimensions produces another matrix with a mix of them:
-
-        $\mathbb{R}^{\textbf{3} \times 2} \times \mathbb{R}^{2 \times \textbf{1}} = \mathbb{R}^{\textbf{3} \times \textbf{1}}$
-
-        Generalizing:
-
-        $\mathbb{R}^{\textbf{a} \times b} \times \mathbb{R}^{c \times \textbf{d}} = \mathbb{R}^{\textbf{a} \times \textbf{d}}$
-
-        Matrix $\times$ vector = vector
-
-        \subsubsection{Performing a function as a matrix multiplication}
-
-          Function:
-
-          $h_{\theta}(x) = -40 + 0.25x$
-
-          Function domain:
-
-          $D_{h_{\theta}} = {2104, 1416, 1534, 852}$
-
-          As a matrix multiplication:
-
-          $\begin{bmatrix}
-            1 & 2104 \\
-            1 & 1416 \\
-            1 & 1534
-            1 & 852 \\
-          \end{bmatrix}
-          \times
-          \begin{bmatrix}
-            -40 \\
-            0.25 \\
-          \end{bmatrix}
-          =
-          \begin{bmatrix}
-            -40 \times 1 + 0.25 \times 2104 \\
-            -40 \times 1 + 0.25 \times 1416 \\
-            -40 \times 1 + 0.25 \times 1534 \\
-            -40 \times 1 + 0.25 \times 852 \\
-          \end{bmatrix}$
-
-          This is computationally more efficient to resolve this kind of
-          problems this way:
-
-          \begin{lstlisting}
-            prediction = DataMatrix * parameters
-          \end{lstlisting}
-
-          than this way:
-
-          \begin{lstlisting}
-            for i:=1, 1000, \ldots,
-                prediction = \dots
-          \end{lstlisting}
-
-      \subsection{Matrix-matrix multiplication}
-
-        $\begin{bmatrix}
-          1 & 3 & 2 \\
-          4 & 0 & 1 \\
-        \end{bmatrix}
-        \begin{bmatrix}
-          1 & 3 \\
-          0 & 1 \\
-          5 & 2 \\
-        \end{bmatrix}
-        =
-        \begin{bmatrix}
-            11 & 10 \\
-            9 & 14 \\
-        \end{bmatrix}$
-
-        $\mathbb{R}^{2 \times 3} \times \mathbb{R}^{3 \times 2} = \mathbb{R}^{2 \times 2}$
-
-        $\begin{bmatrix}
-          1 & 3 & 2 \\
-          4 & 0 & 1 \\
-        \end{bmatrix}
-        \begin{bmatrix}
-          1 \\
-          0 \\
-          5 \\
-        \end{bmatrix}
-        =
-        \begin{bmatrix}
-          11 \\
-          9 \\
-        \end{bmatrix}$
-
-        $\begin{bmatrix}
-          1 & 3 & 2 \\
-          4 & 0 & 1 \\
-        \end{bmatrix}
-        \begin{bmatrix}
-          3 \\
-          1 \\
-          2 \\
-        \end{bmatrix}
-        =
-        \begin{bmatrix}
-          10 \\
-          14 \\
-        \end{bmatrix}$
-
-        $A \times B = C$
-
-        \begin{itemize}
-          \item $A$ is a $m \times n$ matrix.
-          \item $B$ is a $n \times o$ matrix.
-          \item $C$ is a $m \times o$ matrix        \end{itemize}
-
-        To be able to multiply, the number $n$ or rows on $B$ matrix must match the number of columns $n$ on $A$ matrix.
-
-        $C_{i} = A \times B_{i}$
-
-        \subsubsection{Performing multiple functions as a matrix multiplication}
-
-          Functions:
-
-          \begin{enumerate}
-            \item $h_{\theta}(x) = -40 + 0.25x$
-            \item $h_{\theta}(x) = 200 + 0.1x$
-            \item $h_{\theta}(x) = -150 + 0.4x$
-          \end{enumerate}
-
-          Function domain:
-
-          $D_{h_{\theta}} = {2104, 1416, 1534, 852}$
-
-          As a matrix multiplication:
-
-          $\begin{bmatrix}
-            1 & 2104 \\
-            1 & 1416 \\
-            1 & 1534
-            1 & 852 \\
-          \end{bmatrix}
-          \times
-          \begin{bmatrix}
-            -40 & 200 & -150 \\
-            0.25 & 0.1 & 0.4 \\
-          \end{bmatrix}
-          =
-          \begin{bmatrix}
-            486 & 410 & 692 \\
-            314 & 342 & 416 \\
-            344 & 353 & 464 \\
-            173 & 285 & 191 \\
-          \end{bmatrix}$
-
-
-      \subsection{Matrix multiplication properties}
-
-        \begin{itemize}
-          \item \textbf{Not conmutative:} $A$, $B$; matrices. In general, $A \times B \neq B \times A$.
-          \item \textbf{Associative:} $A \times (B \times C) = (A \times B) \times C$
-          \item \textbf{Identity matrix:} Denoted by $I$ or $I_{n \times n}$. It has $1$ in the diagonal and $0$ on any other position. Example of a $I_{3 \times 3}$:
-
-            $\begin{bmatrix}
-              1 & 0 & 1 \\
-              0 & 1 & 0 \\
-              0 & 0 & 1 \\
-            \end{bmatrix}$
-
-            For any matrix $A$: $A \times I = I \times A = A$
-
-          \item \textbf{:} Denoted by $I$ or $I_{n \times n}$. It has $1$ in the diagonal and $0$ on any other position. Example of a $I_{3 \times 3}$:
-
-        \end{itemize}
-
-    \section{Inverse and transpose}
-
-      \subsection{Inverse}
-
-        $1$ = Identity
-
-        Given a number, multiply it to another one to obtain the identity:
-
-        $3 \times (3^{-1}) = 3 \times \frac{1}{3} = 1$
-
-        Not all numbers have an inverse: $0^{0} = undefined$
-
-        \subsubsection{Matrix inverse}
-
-          If A is a $m \times m$ matrix (square matrix), and if it has an inverse:
-
-          $A(A^{-1}) = A^{-1}A = I$
-
-          \begin{itemize}
-            \item Only square matrix can have an inverse.
-            \item Matrices that don't have an inverse are some kind too close to zero.
-            \item Matrices that don't have an inverse are "singular" or "degenerate".
-          \end{itemize}
-
-      \subsection{Matrix transpose}
-
-        $A = 
-        \begin{bmatrix}
-          1 & 2 & 0 \\
-          3 & 5 & 9 \\
-        \end{bmatrix}
-        \Rightarrow
-        A^{T} = 
-        \begin{bmatrix}
-          1 & 3 \\
-          2 & 5 \\
-          0 & 9 \\
-        \end{bmatrix}$
-
-        Let $A$ be an $m \times n$ matrix, and let $B = A^{T}$. Then $B$ is an $n \times m$ matrix and $B_{ij} = A_{ji}$.
-
-        Example:
-
-        $B_{12} = A_{21} = 2$
-
-  \chapter{Linear regression with multiple variables}
-
-    \section{Multiple features}
-
-      \begin{center}
-        \begin{tabular}{ | l | l | l | l | l | }
-          \hline
-          Size in feet$^2$ ($x$) & Number of bedrooms & Number of floors & Age of home (years) & Price in \$1000's ($y$) \\ \hline
-          2104 & 5 & 1 & 45 & 460 \\ \hline
-          1416 & 3 & 2 & 40 & 232 \\ \hline
-          1534 & 3 & 2 & 30 & 315 \\ \hline
-          852  & 2 & 1 & 36 & 178 \\ \hline
-          \ldots & \ldots & \dots & \dots & \ldots \\ \hline
-        \end{tabular}
-      \end{center}
-
-      \textbf{Notation}:
-      \begin{itemize}
-        \item $n$ = number of features
-        \item $x^{(i)}$ = input (features) of $i^{th}$ training example.
-        \item $x^{(i)}_{j}$ = value of feature $j$ in $i^{th}$ training example.
-      \end{itemize}
-
-      $n = 4$
-      $m = 47$
-
-      $x^{(2)} = 
-      \begin{bmatrix}
-        1416 \\
-        3 \\
-        2 \\
-        40 \\
-      \end{bmatrix}$
-
-      $x^{(2)}_3 = 2$
-
-      \subsubsection{Hypothesis}
-
-        $h_{\theta}(x) = \theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} + \ldots + \theta_{n}x_{n}$
-
-        For convenience of notation, define $x_{0} = 1$.
-
-        $x =
-        \begin{bmatrix}
-          x_{0} \\
-          x_{1} \\
-          x_{2} \\
-          \vdots \\
-          x_{n} \\
-        \end{bmatrix}
-        \in \mathbb{R}^{n+1}
-        \ \ \ \ \ 
-        \theta = 
-        \begin{bmatrix}
-          \theta_{0} \\
-          \theta_{1} \\
-          \theta_{2} \\
-          \vdots \\
-          \theta_{n} \\
-        \end{bmatrix}
-        \in \mathbb{R}^{n+1}$
-
-        $h_{\theta}(x) = \theta_{0}x_{0} + \theta_{1}x_{1} + \ldots + \theta_{n}x_{n} = \theta^{T}x =
-        \begin{bmatrix}
-          \theta_{0} & \theta_{1} & \theta_{2} & \vdots & \theta_{n}
-        \end{bmatrix}
-        \begin{bmatrix}
-          x_{0} \\
-          x_{1} \\
-          x_{2} \\
-          \vdots \\
-          x_{n} \\
-        \end{bmatrix}$
-
-        Also named \textbf{Multivariate linear regression}.
-
-    \section{Gradient descent for multiple variables}
-
-      \begin{itemize}
-        \item Hypothesis: $h_{\theta}(x) = \theta^{T}x = \theta_{0}x_{0} + \theta_{1}x_{1} + \ldots + \theta_{n}x_{n}$
-        \item Parameters: $\theta_{0}, \theta_{1}, \ldots, \theta_{n}$
-        \item Cost function: $J(\theta_{0}, \theta_{1}, \ldots, \theta_{n}) = J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y^{(i)})^{2}$
-        \item Gradient descent:
-
-            Repeat \{
-
-                \hspace{1cm} $\theta_{j} := \theta_{j} - \alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0}, \ldots, \theta_{n}) = \theta_{j} - \alpha\frac{\partial}{\partial\theta_{j}}J(\theta) = \theta_{j} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})) - y^{(i)})x^{(i)}_{j}$
-
-            \} \ \ (simultaneously update for every $j = 0, \ldots, n$)
-      \end{itemize}
-
-    \section{Gradient descent for multiple variables}
-
-      \begin{itemize}
-        \item Hypothesis: $h_{\theta}(x) = \theta^{T}_{x} = \theta_{0}x_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} + \ldots + \theta_{n}x_{n}$
-        \item Parameters: $\theta_{0}, \theta_{1}, \ldots, \theta_{n} = \theta$ \ \ ($n+1$-dimensional vector
-        \item Cost function: $J(\theta_{0}, \theta_{1}, \ldots, \theta_{n}) = J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y^{(i)})^{2}$
-        \item Gradient descent:
-        
-          Repeat \{
-
-            \hspace{1cm} $\theta_{j} := \theta_{j} - \alpha\frac{\partial}{\partial\theta_{j}}J(\theta_{0}, \ldots, \theta_{n}) = \theta_{j} - \alpha\frac{\partial}{\partial\theta_{j}}J(\theta)$
-
-         \} \ \ \ (simultaneously update for every $j = 0, \ldots, n$)
-      \end{itemize}
-
-      Developing the derivate for $n \geq 1$:
-
-      Repeat \{
-
-      \hspace{1cm} $\theta_{j} := \theta_{j} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y^{i}x^{(i)}_{j}$
-
-      \} \ \ \ (simultaneously update $\theta_{j}$ for $j = 0, \ldots, n$)
-
-    \section{Gradient descent in practice I: Feature scaling}
-
-      \subsection{Make sure features are on similar scale}
-        
-        Example:
-
-        $x_{1}$ = size ($0-2000 feet^{2}$)
-
-        $x_{2}$ = number of bedrooms ($1-5$)
-
-        The elipses can be very skiny and gradient descent can take a lot of time to reach the local minimum.
-
-        $x_{1} = \frac{size (feet^{2})}{2000} \implies 0 \leq x_{1} \leq 1$
-        
-        $x_{2} = \frac{number of bedrooms}{5} \implies 0 \leq x_{2} \leq 1$
-
-        The elipses are now less tall and the convergence can be reached much faster.
-
-      \subsection{Get every feature approximately a $-1 \leq x_{i} \leq 1$}
+The multiplication of matrix with different dimensions produces another matrix
+with a mix of them:
+
+.. math::
+   \mathbb{R}^{\textbf{3} \times 2} \times \mathbb{R}^{2 \times \textbf{1}} =
+   \mathbb{R}^{\textbf{3} \times \textbf{1}}
+
+Generalizing:
+
+.. math::
+   \mathbb{R}^{\textbf{a} \times b} \times \mathbb{R}^{c \times \textbf{d}} =
+   \mathbb{R}^{\textbf{a} \times \textbf{d}}
+
+   Matrix \times vector = vector
+
+Performing a function as a matrix multiplication
+````````````````````````````````````````````````
+
+Function:
+
+.. math::
+   h_{\theta}(x) = -40 + 0.25x
+
+Function domain:
+
+.. math::
+   D_{h_{\theta}} = {2104, 1416, 1534, 852}
+
+As a matrix multiplication:
+
+.. math::
+   \begin{bmatrix}
+     1 & 2104 \\
+     1 & 1416 \\
+     1 & 1534
+     1 & 852 \\
+   \end{bmatrix} \times \begin{bmatrix}
+                          -40 \\
+                          0.25 \\
+                        \end{bmatrix} = \begin{bmatrix}
+                                          -40 \times 1 + 0.25 \times 2104 \\
+                                          -40 \times 1 + 0.25 \times 1416 \\
+                                          -40 \times 1 + 0.25 \times 1534 \\
+                                          -40 \times 1 + 0.25 \times 852 \\
+                                        \end{bmatrix}
+
+This is computationally more efficient to resolve this kind of problems this
+way:
+
+.. line-block::
+   prediction = DataMatrix * parameters
+
+than this way:
+
+.. line-block::
+   for i:=1, 1000, ...,
+       prediction = ...
+
+Matrix-matrix multiplication
+````````````````````````````
+.. math::
+   \begin{bmatrix}
+     1 & 3 & 2 \\
+     4 & 0 & 1 \\
+   \end{bmatrix}
+   \begin{bmatrix}
+     1 & 3 \\
+     0 & 1 \\
+     5 & 2 \\
+   \end{bmatrix} = \begin{bmatrix}
+                     11 & 10 \\
+                     9 & 14 \\
+                   \end{bmatrix}
+
+   \mathbb{R}^{2 \times 3} \times \mathbb{R}^{3 \times 2} =
+   \mathbb{R}^{2 \times 2}
+
+   \begin{bmatrix}
+     1 & 3 & 2 \\
+     4 & 0 & 1 \\
+   \end{bmatrix}
+   \begin{bmatrix}
+     1 \\
+     0 \\
+     5 \\
+   \end{bmatrix} = \begin{bmatrix}
+                     11 \\
+                     9 \\
+                   \end{bmatrix}
+
+   \begin{bmatrix}
+     1 & 3 & 2 \\
+     4 & 0 & 1 \\
+   \end{bmatrix}
+   \begin{bmatrix}
+     3 \\
+     1 \\
+     2 \\
+   \end{bmatrix} = \begin{bmatrix}
+                     10 \\
+                     14 \\
+                   \end{bmatrix}
+
+   A \times B = C
+
+* :math:`A` is a :math:`m \times n` matrix.
+* :math:`B` is a :math:`n \times o` matrix.
+* :math:`C` is a :math:`m \times o` matrix.
+
+To be able to multiply, the number :math:`n` or rows on :math:`B` matrix must
+match the number of columns :math:`n` on :math:`A` matrix.
+
+.. math::
+   C_{i} = A \times B_{i}
+
+Performing multiple functions as a matrix multiplication
+````````````````````````````````````````````````````````
+
+Functions
+  * :math:`h_{\theta}(x) = -40 + 0.25x`
+  * :math:`h_{\theta}(x) = 200 + 0.1x`
+  * :math:`h_{\theta}(x) = -150 + 0.4x`
+
+Function domain:
+  :math:`D_{h_{\theta}} = {2104, 1416, 1534, 852}`
+
+As a matrix multiplication:
+  .. math::
+     \begin{bmatrix}
+       1 & 2104 \\
+       1 & 1416 \\
+       1 & 1534
+       1 & 852 \\
+     \end{bmatrix} \times \begin{bmatrix}
+                            -40 & 200 & -150 \\
+                            0.25 & 0.1 & 0.4 \\
+                          \end{bmatrix} = \begin{bmatrix}
+                                            486 & 410 & 692 \\
+                                            314 & 342 & 416 \\
+                                            344 & 353 & 464 \\
+                                            173 & 285 & 191 \\
+                                          \end{bmatrix}
+
+Matrix multiplication properties
+````````````````````````````````
+* **Not conmutative:** :math:`A, B`; matrices. In general, :math:`A \times B
+  \neq B \times A`.
+* **Associative:** :math:`A \times (B \times C) = (A \times B) \times C`
+* **Identity matrix:** Denoted by :math:`I` or :math:`I_{n \times n}`. It has
+  :math:`1` in the diagonal and :math:`0` on any other position. Example of a
+  :math:`I_{3 \times 3}`:
+
+.. math::
+   \begin{bmatrix}
+     1 & 0 & 1 \\
+     0 & 1 & 0 \\
+     0 & 0 & 1 \\
+   \end{bmatrix}
+
+For any matrix A: :math:`A \times I = I \times A = A`
+
+Inverse and transpose
+---------------------
+
+Inverse
+```````
+
+.. math::
+   1 = Identity
+
+Given a number, multiply it to another one to obtain the identity:
+
+.. math::
+   3 \times (3^{-1}) = 3 \times \frac{1}{3} = 1
+
+Not all numbers have an inverse: :math:`0^{0} = undefined`
+
+Matrix inverse
+``````````````
+
+If A is a :math:`m \times m` matrix (square matrix), and if it has an inverse:
+
+.. math::
+   A(A^{-1}) = A^{-1}A = I
+
+* Only square matrix can have an inverse.
+* Matrices that don't have an inverse are some kind too close to zero.
+* Matrices that don't have an inverse are "singular" or "degenerate".
+
+Matrix transpose
+````````````````
+
+.. math::
+   A = \begin{bmatrix}
+         1 & 2 & 0 \\
+         3 & 5 & 9 \\
+       \end{bmatrix} \Rightarrow A^{T} = \begin{bmatrix}
+                                           1 & 3 \\
+                                           2 & 5 \\
+                                           0 & 9 \\
+                                         \end{bmatrix}
+
+Let :math:`A` be an :math:`m \times n` matrix, and let :math:`B = A^{T}`. Then
+:math:`B` is an :math:`n \times m` matrix and :math:`B_{ij} = A_{ji}`.
+
+Example:
+
+.. math::
+   B_{12} = A_{21} = 2
+
+Linear regression with multiple variables
+=========================================
+
+Multiple features
+-----------------
+
++------------------------------------+--------------------+------------------+---------------------+-----------------+
+| Size in :math:`feet^2` (:math:`x`) | Number of bedrooms | Number of floors | Age of home (years) | Price in $1000's (:math:`y`) |
++====================================+====================+==================+=====================+==============================+
+| 2104                               | 5                  | 1                | 45                  | 460                          |
++------------------------------------+--------------------+------------------+---------------------+------------------------------+
+| 1416                               | 3                  | 2                | 40                  | 232                          |
++------------------------------------+--------------------+------------------+---------------------+------------------------------+
+| 1534                               | 3                  | 2                | 30                  | 315                          |
++------------------------------------+--------------------+------------------+---------------------+------------------------------+
+| 852                                | 2                  | 1                | 36                  | 178                          |
++------------------------------------+--------------------+------------------+---------------------+------------------------------+
+| ...                                | ...                | ...              | ...                 | ...                          |
++------------------------------------+--------------------+------------------+---------------------+------------------------------+
+
+Notation
+  * :math:`n` = number of features
+  * :math:`x^{(i)}` = input (features) of :math:`i^{th}` training example.
+  * :math:`x^{(i)}_{j}` = value of feature $j$ in :math:`i^{th}` training
+    example.
+
+.. math::
+      n = 4
+
+      m = 47
+
+      x^{(2)} = \begin{bmatrix}
+                  1416 \\
+                  3 \\
+                  2 \\
+                  40 \\
+                \end{bmatrix}
+
+      x^{(2)}_3 = 2
+
+Hypothesis
+``````````
+
+.. math::
+   h_{\theta}(x) = \theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} + \ldots +
+   \theta_{n}x_{n}
+
+For convenience of notation, define :math:`x_{0} = 1`.
+
+.. math::
+   x = \begin{bmatrix}
+         x_{0} \\
+         x_{1} \\
+         x_{2} \\
+         \vdots \\
+         x_{n} \\
+       \end{bmatrix} \in \mathbb{R}^{n+1} \ \ \ \ \ 
+       \theta = \begin{bmatrix}
+                  \theta_{0} \\
+                  \theta_{1} \\
+                  \theta_{2} \\
+                  \vdots \\
+                  \theta_{n} \\
+                \end{bmatrix} \in \mathbb{R}^{n+1}
+
+   h_{\theta}(x) = \theta_{0}x_{0} + \theta_{1}x_{1} + \ldots +
+   \theta_{n}x_{n} = \theta^{T}x =
+   \begin{bmatrix}
+     \theta_{0} & \theta_{1} & \theta_{2} & \vdots & \theta_{n}
+   \end{bmatrix}
+   \begin{bmatrix}
+     x_{0} \\
+     x_{1} \\
+     x_{2} \\
+     \vdots \\
+     x_{n} \\
+   \end{bmatrix}
+
+Also named **Multivariate linear regression**.
+
+Gradient descent for multiple variables
+---------------------------------------
+
+* **Hypothesis:** :math:`h_{\theta}(x) = \theta^{T}x = \theta_{0}x_{0} + \theta_{1}x_{1} + \ldots + \theta_{n}x_{n}`
+* **Parameters:** :math:`\theta_{0}, \theta_{1}, \ldots, \theta_{n}`
+* **Cost function:** :math:`J(\theta_{0}, \theta_{1}, \ldots, \theta_{n}) = J(\theta) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y^{(i)})^{2}`
+* **Gradient descent:**
+
+.. math::  
+   Repeat \{
+
+   \ \ \theta_{j} := \theta_{j} -
+                     \alpha\frac{\partial}{\partial\theta_{j}}
+                     J(\theta_{0}, \ldots, \theta_{n}) =
+                     \theta_{j} - \alpha\frac{\partial}{\partial\theta_{j}}
+                     J(\theta) =
+                     \theta_{j} - \alpha\frac{1}{m}
+                     \sum_{i=1}^{m}(h_{\theta}(x^{(i)})) - y^{(i)})x^{(i)}_{j}
+
+   \} \ \ (simultaneously update for every j = 0, \ldots, n)
+
+Developing the derivate for :math:`n \geq 1`:
+
+.. math::
+   Repeat \{
+   \ \ \theta_{j} := \theta_{j} - \alpha\frac{1}{m}
+                     \sum_{i=1}^{m}(h_{\theta}(x^{(i)}) - y^{i}x^{(i)}_{j}
+
+   \} \ \ \ (simultaneously update \theta_{j} for j = 0, \ldots, n)
+
+Gradient descent in practice I: Feature scaling
+-----------------------------------------------
+
+Make sure features are on similar scale
+```````````````````````````````````````
+Example:
+
+.. math::
+   x_{1} = size (0-2000 feet^{2})
+
+   x_{2} = number of bedrooms (1-5)
+
+The elipses can be very skiny and gradient descent can take a lot of time to
+reach the local minimum.
+
+.. math::
+   x_{1} = \frac{size (feet^{2})}{2000} \implies 0 \leq x_{1} \leq 1
+
+   x_{2} = \frac{number of bedrooms}{5} \implies 0 \leq x_{2} \leq 1
+
+The elipses are now less tall and the convergence can be reached much faster.
+
+Get every feature approximately a :math:`-1 \leq x_{i} \leq 1`
+``````````````````````````````````````````````````````````````
 
       $0 \leq x_{1} \leq 3 \checkmark$
 
