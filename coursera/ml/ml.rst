@@ -1,10 +1,6 @@
-===================================================
- Machine Learning course on Coursera summarization
-===================================================
-
---------------------
- Ariel Gerardo Ríos
---------------------
+==================
+ Machine Learning 
+==================
 
 Begining
 ========
@@ -46,7 +42,10 @@ Classification problems
 ```````````````````````
 
 It tries to assign a discrete value (classification) for a given output.
-Example: :math:`Cancer $\rightarrow$ {benign=0, malign=1}`
+Example:
+
+.. math::
+   Cancer \rightarrow {benign=0, malign=1}
 
 Linear regression with one variable
 ===================================
@@ -62,168 +61,178 @@ Notation:
 
 Example: Training set of housing prices
 
-Size in :math:`feet^2` (:math:`x`) & Price in $1000's (:math:`y`) \\ \hline
-          2104 & 460 \\ \hline
-          1416 & 232 \\ \hline
-          1534 & 315 \\ \hline
-          852  & 178 \\ \hline
-          \ldots & \ldots \\ \hline
-        \end{tabular}
-      \end{center}
++-------------------------------------------------------------------+
+| Size in :math:`feet^2` (:math:`x`) | Price in $1000's (:math:`y`) |
++====================================+==============================+
+| 2104                               | 460                          |
++------------------------------------+------------------------------+
+| 1416                               | 232                          |
++------------------------------------+------------------------------+
+| 1534                               | 315                          |
++------------------------------------+------------------------------+
+| 852                                | 178                          |
++------------------------------------+------------------------------+
 
-      \framebox[1.1\width][c]{Training set} \par
-      \framebox[1.1\width]{Learning algorithm} \par
+Linear algebra review
+=====================
 
-      Size of house $\rightarrow$ \framebox[1cm]{h} $\rightarrow$ Estimated
-      price
+Matrices and vectors
+--------------------
 
-  \chapter{Linear algebra review}
+Matrix
+``````
 
-    \section{Matrices and vectors}
+**Definition**
+  Rectangular array of numbers.
 
-      \subsection{Matrix}
+.. math::
+   A = \begin{bmatrix}
+         1 & 2 & 3 \\
+         4 & 5 & 6 \\
+       \end{bmatrix}
 
-        \textbf{Definition:} Rectangular array of numbers.
-
-        $A =
-        \begin{bmatrix}
-          1 & 2 & 3 \\
-          4 & 5 & 6 \\
-        \end{bmatrix}$
-
-        \textbf{Dimension of matrix:} Number of rows $\times$ number of columns.
+**Dimension of matrix**
+  Number of rows :math:`$\times$` number of columns.
         
-        This example has \textbf{2 rows} and \textbf{3 columns} and it contains
-        Real numbers, so it can be represented as $\mathbb{R}^{2\times3}$.
+This example has **2 rows** and **3 columns** and it contains Real numbers, so
+it can be represented as :math:`$\mathbb{R}^{2\times3}$`.
 
-      \subsubsection{Matrix elements}
+Matrix elements
+'''''''''''''''
+:math:`A_{ij} = i,j \ entry`; in the :math:`i` row, :math:`j` column. Examples:
 
-        $A_{ij}$ = $i,j$ entry; in the $i$ row, $j$ column.
+.. math::
 
-        Examples:
+   A_{11} = 1
 
-        $A_{11} = 1$
-        
-        $A_{23} = 6$
+   A_{23} = 6
 
-      \subsection{Vector}
+Vector
+``````
 
-        \textbf{Definition:} An $n \times 1$ matrix.
+Definition
+  An :math:`n \times 1` matrix.
 
-        $y =
-        \begin{bmatrix}
-          460 \\
-          232 \\
-          315 \\
-          178 \\
-        \end{bmatrix}$
+.. math::
+   y = \begin{bmatrix}
+         460 \\
+         232 \\
+         315 \\
+         178 \\
+       \end{bmatrix}
 
-        A 4-dimensional vector; $\mathbb{R}^4$
+A 4-dimensional vector; :math:`\mathbb{R}^4`
 
-        \subsubsection{Vector elements}
+Vector elements
+'''''''''''''''
 
-          $y_{i}$ = $i$ element
+.. math::
+   y_{i} = i element
 
-          Example:
+Example:
 
-          $y_{1}$ = 460
+.. math::
+   y_{1} = 460
 
-          $y_{3}$ = 315
+   y_{3} = 315
 
 
-    \section{Conventions for the course}
+Conventions for the course
+--------------------------
           
-        \begin{itemize}
-          \item Naming: Uppercase letters for matrix naming and lowercase letter for vectors.
-          \item 1-indexed vs 0-indexed: The course will use \textbf{1-indexed} vectors unless other condition is indicated.
-        \end{itemize}
+Naming
+  Uppercase letters for matrix naming and lowercase letter for vectors.
+1-indexed vs 0-indexed
+  The course will use \textbf{1-indexed} vectors unless other condition is
+  indicated.
 
+Addition and scalar multiplication
+----------------------------------
 
-    \section{Addition and scalar multiplication}
+Matrix addition
+```````````````
 
-      \subsection{Matrix addition}
+.. math::
+   \begin{bmatrix}
+     1 && 0 \\
+     2 && 5 \\
+     3 && 1 \\
+   \end{bmatrix}
+   + 
+   \begin{bmatrix}
+     4 && 0.5 \\
+     2 && 5 \\
+     0 && 1 \\
+   \end{bmatrix}
+   =
+   \begin{bmatrix}
+     5 && 0.5 \\
+     4 && 10 \\
+     2 && 3 \\
+   \end{bmatrix}
 
-        $\begin{bmatrix}
-          1 && 0 \\
-          2 && 5 \\
-          3 && 1 \\
-        \end{bmatrix}
-        + 
-        \begin{bmatrix}
-          4 && 0.5 \\
-          2 && 5 \\
-          0 && 1 \\
-        \end{bmatrix}
-        =
-        \begin{bmatrix}
-          5 && 0.5 \\
-          4 && 10 \\
-          2 && 3 \\
-        \end{bmatrix}$
+Both matrix participating on addition matchs on dimension and the result is
+another matrix with the same dimention.
 
-        Both matrix participating on addition matchs on dimension and the result is another matrix with the same dimention.
+.. math::
+   \mathbb{R}^{3\times2} + \mathbb{R}^{3\times2} = \mathbb{R}^{3\times2}
 
-        $\mathbb{R}^{3\times2} + \mathbb{R}^{3\times2} = \mathbb{R}^{3\times2}$
+Addition between matrix of different dimension cannot be done:
 
-        Addition between matrix of different dimension cannot be done:
+.. math::
+   \mathbb{R}^{3\times2} + \mathbb{R}^{2\times2} = Error
 
-        $\mathbb{R}^{3\times2} + \mathbb{R}^{2\times2} =$ \textbf{Error}
+Scalar multiplication
+`````````````````````
 
-      \subsection{Scalar multiplication}
+Scalar = Real number.
 
-        Scalar = Real number.
+.. math::
+   3 \times \begin{bmatrix}
+              1 && 0 \\
+              2 && 5 \\
+              3 && 1 \\
+            \end{bmatrix} = \begin{bmatrix}
+                              3 && 0 \\
+                              6 && 15 \\
+                              9 && 3 \\
+                            \end{bmatrix}
 
-        $3 \times \begin{bmatrix}
-          1 && 0 \\
-          2 && 5 \\
-          3 && 1 \\
-        \end{bmatrix}
-        =
-        \begin{bmatrix}
-          3 && 0 \\
-          6 && 15 \\
-          9 && 3 \\
-        \end{bmatrix}$
-        
-        $\begin{bmatrix}
-          4 && 0 \\
-          6 && 3 \\
-        \end{bmatrix}
-        \div 4
-        =
-        \begin{bmatrix}
-          1 && 0 \\
-          3/2 && 3/4 \\
-        \end{bmatrix}$
+   \begin{bmatrix}
+     4 && 0 \\
+     6 && 3 \\
+   \end{bmatrix} \div 4 = \begin{bmatrix}
+                            1 && 0 \\
+                            3/2 && 3/4 \\
+                          \end{bmatrix}
 
-        $\mathbb{R} \times \mathbb{R}^{n \times m} = \mathbb{R}^{n \times m}$
+   \mathbb{R} \times \mathbb{R}^{n \times m} = \mathbb{R}^{n \times m}
 
-      \subsection{Matrix-vector multiplication}
+Matrix-vector multiplication
+````````````````````````````
 
-        $\begin{bmatrix}
-          1 && 3 \\
-          4 && 0 \\
-          2 && 1 \\
-        \end{bmatrix}
-        \begin{bmatrix}
-          1 \\
-          5 \\
-        \end{bmatrix}
-        =
-        \begin{bmatrix}
-          16 \\
-          4 \\
-          7 \\
-        \end{bmatrix}
-        = r$
+.. math::
+   \begin{bmatrix}
+     1 && 3 \\
+     4 && 0 \\
+     2 && 1 \\
+   \end{bmatrix}
+   \begin{bmatrix}
+     1 \\
+     5 \\
+   \end{bmatrix} =  \begin{bmatrix}
+                      16 \\
+                      4 \\
+                      7 \\
+                    \end{bmatrix} = r
 
-        $r_{11} = 1 \times 1 + 3 \times 5 = 16$
-        
-        $r_{21} = 4 \times 1 + 0 \times 5 = 4$
+   r_{11} = 1 \times 1 + 3 \times 5 = 16
+   
+   r_{21} = 4 \times 1 + 0 \times 5 = 4
 
-        $r_{31} = 2 \times 1 + 1 \times 5 = 7$
+   r_{31} = 2 \times 1 + 1 \times 5 = 7
 
-        The multiplication of matrix with different dimensions produces another matrix with a mix of them:
+The multiplication of matrix with different dimensions produces another matrix with a mix of them:
 
         $\mathbb{R}^{\textbf{3} \times 2} \times \mathbb{R}^{2 \times \textbf{1}} = \mathbb{R}^{\textbf{3} \times \textbf{1}}$
 
