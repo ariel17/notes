@@ -61,17 +61,17 @@ Notation:
 
 Example: Training set of housing prices
 
-+-------------------------------------------------------------------+
-| Size in :math:`feet^2` (:math:`x`) | Price in $1000's (:math:`y`) |
-+====================================+==============================+
-| 2104                               | 460                          |
-+------------------------------------+------------------------------+
-| 1416                               | 232                          |
-+------------------------------------+------------------------------+
-| 1534                               | 315                          |
-+------------------------------------+------------------------------+
-| 852                                | 178                          |
-+------------------------------------+------------------------------+
++--------------------------------------------------------------------+
+| Size in :math:`feet^2` (:math:`x`) | Price in \$1000's (:math:`y`) |
++====================================+===============================+
+| 2104                               | 460                           |
++------------------------------------+-------------------------------+
+| 1416                               | 232                           |
++------------------------------------+-------------------------------+
+| 1534                               | 315                           |
++------------------------------------+-------------------------------+
+| 852                                | 178                           |
++------------------------------------+-------------------------------+
 
 Linear algebra review
 =====================
@@ -92,10 +92,10 @@ Matrix
        \end{bmatrix}
 
 **Dimension of matrix**
-  Number of rows :math:`$\times$` number of columns.
+  Number of rows :math:`\times` number of columns.
         
 This example has **2 rows** and **3 columns** and it contains Real numbers, so
-it can be represented as :math:`$\mathbb{R}^{2\times3}$`.
+it can be represented as :math:`\mathbb{R}^{2\times3}`.
 
 Matrix elements
 '''''''''''''''
@@ -157,19 +157,15 @@ Matrix addition
      1 && 0 \\
      2 && 5 \\
      3 && 1 \\
-   \end{bmatrix}
-   + 
-   \begin{bmatrix}
-     4 && 0.5 \\
-     2 && 5 \\
-     0 && 1 \\
-   \end{bmatrix}
-   =
-   \begin{bmatrix}
-     5 && 0.5 \\
-     4 && 10 \\
-     2 && 3 \\
-   \end{bmatrix}
+   \end{bmatrix} + \begin{bmatrix}
+                     4 && 0.5 \\
+                     2 && 5 \\
+                     0 && 1 \\
+                   \end{bmatrix} = \begin{bmatrix}
+                                     5 && 0.5 \\
+                                     4 && 10 \\
+                                     2 && 3 \\
+                                   \end{bmatrix}
 
 Both matrix participating on addition matchs on dimension and the result is
 another matrix with the same dimention.
@@ -448,24 +444,37 @@ Linear regression with multiple variables
 Multiple features
 -----------------
 
-+------------------------------------+--------------------+------------------+---------------------+-----------------+
-| Size in :math:`feet^2` (:math:`x`) | Number of bedrooms | Number of floors | Age of home (years) | Price in $1000's (:math:`y`) |
-+====================================+====================+==================+=====================+==============================+
-| 2104                               | 5                  | 1                | 45                  | 460                          |
-+------------------------------------+--------------------+------------------+---------------------+------------------------------+
-| 1416                               | 3                  | 2                | 40                  | 232                          |
-+------------------------------------+--------------------+------------------+---------------------+------------------------------+
-| 1534                               | 3                  | 2                | 30                  | 315                          |
-+------------------------------------+--------------------+------------------+---------------------+------------------------------+
-| 852                                | 2                  | 1                | 36                  | 178                          |
-+------------------------------------+--------------------+------------------+---------------------+------------------------------+
-| ...                                | ...                | ...              | ...                 | ...                          |
-+------------------------------------+--------------------+------------------+---------------------+------------------------------+
++------------------------------------+--------------------+------------------
++---------------------+------------------------------+
+| Size in :math:`feet^2` (:math:`x`) | Number of bedrooms | Number of floors
+| Age of home (years) | Price in \$1000's (:math:`y`) |
++====================================+====================+==================
++=====================+===============================+
+| 2104                               | 5                  | 1                
+| 45                  | 460                          |
++------------------------------------+--------------------+------------------
++---------------------+-------------------------------+
+| 1416                               | 3                  | 2                
+| 40                  | 232                          |
++------------------------------------+--------------------+------------------
++---------------------+-------------------------------+
+| 1534                               | 3                  | 2                
+| 30                  | 315                          |
++------------------------------------+--------------------+------------------
++---------------------+-------------------------------+
+| 852                                | 2                  | 1                
+| 36                  | 178                          |
++------------------------------------+--------------------+------------------
++---------------------+-------------------------------+
+| ...                                | ...                | ...              
+| ...                 | ...                          |
++------------------------------------+--------------------+------------------
++---------------------+-------------------------------+
 
 Notation
   * :math:`n` = number of features
   * :math:`x^{(i)}` = input (features) of :math:`i^{th}` training example.
-  * :math:`x^{(i)}_{j}` = value of feature $j$ in :math:`i^{th}` training
+  * :math:`x^{(i)}_{j}` = value of feature :math:`j` in :math:`i^{th}` training
     example.
 
 .. math::
@@ -577,196 +586,230 @@ The elipses are now less tall and the convergence can be reached much faster.
 Get every feature approximately a :math:`-1 \leq x_{i} \leq 1`
 ``````````````````````````````````````````````````````````````
 
-      $0 \leq x_{1} \leq 3 \checkmark$
+.. math::
+   0 \leq x_{1} \leq 3 \checkmark
 
-      $-2 \leq x_{1} \leq 0.5 \checkmark$
+   -2 \leq x_{1} \leq 0.5 \checkmark
 
-      $-100 \leq x_{1} \leq 100 \text{\sffamily X}$
+   -100 \leq x_{1} \leq 100 \text{\sffamily X}
 
-      \subsection{Mean normalization}
+Mean normalization
+``````````````````
+Replace :math:`x_{i}` with :math:`x_{i} - \mu_{i}` to make features have
+approximately zero mean (do not apply to :math:`x_{0} = 1`).
 
-      Replace $x_{i}$ with $x_{i} - \mu_{i}$ to make features have approximately zero mean (do not apply to $x_{0} = 1$).
+Example:
 
-      Example:
+.. math::
+   x_{1} = \frac{size - 1000}{2000} \ \ Average: size = 100
+   
+   x_{2} = \frac{\#bedrooms - 2}{5} \ \ 1 - 5 bedrooms
+   
+   -0.5 \leq x_{1} \leq 0.5, -0.5 \leq x_{2} \leq 0.5
 
-      $x_{1} = \frac{size - 1000}{2000}$ \ \ Average: $size = 100$
+Generally:
 
-      $x_{2} = \frac{\#bedrooms - 2}{5}$ \ \ $1 - 5$ bedrooms
+.. math::
+   x_{i} = \frac{x_{i} - \mu{i}}{s_{i}}
+   
+   \mu_{i} = average value of x_{i} in training set.
+   
+   s_{i} = range of values (max - min, or standard deviation).
 
-      $-0.5 \leq x_{1} \leq 0.5, -0.5 \leq x_{2} \leq 0.5$
+Gradient descent in practice II: learning rate
+----------------------------------------------
 
-      Generally:
+Making sure gradient descent is working correctly
+`````````````````````````````````````````````````
+Example automatic convergence test:
 
-      $x_{i} = \frac{x_{i} - \mu{i}}{s_{i}}$
+Declare convergence if :math:`J(\theta)` decrases by less than :math:`10^{-3}`
+in one iteration.
 
-      $\mu_{i}$ = average value of $x_{i}$ in training set.
+If plot graphic is increasing, then the algorithm is not working. **Use a
+smaller :math:`\alpha`**.
 
-      $s_{i}$ = range of values ($max - min$, or standard deviation).
+Facts
+'''''
+* For sufficiently small :math:`\alpha`, :math:`J(\theta)` should decrease on
+  every iteration.
+* But if :math:`\alpha` is too small, gradient descent can be slow to converge.
 
-    \section{Gradient descent in practice II: learning rate}
+Recomendation
+'''''''''''''
 
-      \subsection{Making sure gradient descent is working correctly}
+To choose :math:`\alpha`, try: :math:`\ldots, 0.001, 0.01, 0.1, 1, \ldots`
+Factors of it
 
-        Example automatic convergence test:
+To make sure that a value is too short or a value is too large.
 
-        Declare convergence if $J(\theta)$ decrases by less than $10^{-3}$ in one iteration.
+Features and polynomial regression
+----------------------------------
 
-        If plot graphic is increasing, then the algorithm is not working. \textbf{Use a smaller $\alpha$}.
+Changing to new features
+````````````````````````
 
-        \subsubsection{Facts}
+.. math::
+   h_{\theta}(x) = \theta_{0} + \theta_{1} \times frontage + \theta_{2} \times
+   depth
 
-          \begin{itemize}
-            \item For sufficiently small $\alpha$, $J(\theta)$ should decrease on every iteration.
-            \item But if $\alpha$ is too small, gradient descent can be slow to converge.
-          \end{itemize}
+   frontage = x_{1}, depth = x_{2} \implies area = frontage \times depth
 
-        \subsubsection{Recomendation}
+   h_{\theta}(x) = \theta_{0} + \theta_{1}area
 
-          To choose $\alpha$, try:
+Polynomial regression
+`````````````````````
+.. math::
+   Price = y
+   Size = x
 
-          $\ldots, 0.001, 0.01, 0.1, 1, \ldots$ \ \ Factors of it
+Using :math:`\theta_{0} + \theta_{1}x + \theta_{2}x^{2}` may match the initial
+value but the cuadratic function tends to back to zero, so it is not the
+behavior expected for increasing values.
 
-          To make sure that a value is too short or a value is too large.
+Changing the model to a cubic function:
 
-    \section{Features and polynomial regression}
+.. math::
+   h_{\theta}(x) = \theta_{0} + \theta_{1}x + \theta_{2}x^{2} + \theta_{3}x_{3}
+                 = \theta_{0} + \theta_{1}(size) + \theta_{2}(size)^{2} +
+                   \theta_{3}(size)^{3}
 
-      \subsection{Changing to new features}
+Scaling features is important because values can be increase quickly.
 
-        $h_{\theta}(x) = \theta_{0} + \theta_{1} \times frontage + \theta_{2} \times depth$
+Other solution can be:
 
-        $frontage = x_{1}, depth = x_{2} \implies area = frontage \times depth$
+.. math::
+   h_{\theta}(x) = \theta_{0} + \theta_{1}(size) + \theta_{2}\sqrt{size}
 
-        $h_{\theta}(x) = \theta_{0} + \theta_{1}area$
+Normal equation
+---------------
 
-      \subsection{Polynomial regression}
+It is a method to solve for :math:`\theta` analytically.
 
-        Price = y
-        Size = x
+Intuition
+`````````
+If 1D (:math:`\theta \in \mathbb{R}`)
+'''''''''''''''''''''''''''''''''''''
 
-        Using $\theta_{0} + \theta_{1}x + \theta_{2}x^{2}$ may match the initial value but the cuadratic function tends to back to zero, so it is not the behavior expected for increasing values.
+.. math::
+   J(\theta) = a\theta^{2} + b\theta + c
 
-        Changing the model to a cubic function:
+Obtaining the minimum: solve for
+:math:`\frac{\partial}{\partial\theta}J(\theta) = \ldots = 0`
 
-        $h_{\theta}(x) = \theta_{0} + \theta_{1}x + \theta_{2}x^{2} + \theta_{3}x_{3} = \theta_{0} + \theta_{1}(size) + \theta_{2}(size)^{2} + \theta_{3}(size)^{3}$
+If nD (:math:`\theta \in \mathbb{R}^{n+1}`)
+'''''''''''''''''''''''''''''''''''''''''''
 
-        Scaling features is important because values can be increase quickly.
+.. math::
+   J(\theta_{0}, \theta_{1}, \ldots, \theta_{m}) =
+   \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}
 
-        Other solution can be:
+Obtaining the minimum: solve for
+:math:`\frac{\partial}{\partial\theta}J(\theta) = \ldots = 0` (for every
+:math:`j`)
 
-        $h_{\theta}(x) = \theta_{0} + \theta_{1}(size) + \theta_{2}\sqrt{size}$
+Solve for :math:`\theta_{0}, \theta_{1}, \ldots, \theta_{n}`
 
-    \section{Normal equation}
+Example
+'''''''
+:math:`m = 4`
 
-      It is a method to solve for $\theta$ analytically.
++---------------+-------------------------+--------------------+------------------+---------------------+----------------+
+|               | Size (:math:`feet^{2}`) | Number of bedrooms | Number of floors | Age of home (years) | Price (\$1000) |
++---------------+-------------------------+--------------------+------------------+-------------------+------------------+
+| :math:`x_{0}` | :math:`x_{1}`           | :math:`x_{2}`      | :math:`x_{3}`    | :math:`x_{4}`     | :math:`y`        |
++===============+=========================+====================+==================+===================+==================+
+| 1             | 2104                    | 5                  | 1                | 45                | 460              |
++---------------+-------------------------+----------------------+------------------+-------------------+----------------+
+| 1             | 1416                    | 3                  | 2                | 40                  | 232            |
++---------------+-------------------------+----------------------+------------------+-------------------+----------------+
+|       1       | 1534                    | 3                  | 2                | 30                  | 315            |
++---------------+-------------------------+----------------------+------------------+-------------------+----------------+
+|       1       | 852                     | 2                  | 1                | 36                  | 178            |
++---------------+-------------------------+--------------------+------------------+---------------------+----------------+
 
-      \subsection{Intuition}
-      
-        \subsubsection{If 1D ($\theta \in \mathbb{R}$)}
+Using the values from features to create the :math:`X` matrix:
 
-          $J(\theta) = a\theta^{2} + b\theta + c$
+.. math::
+   X = \begin{bmatrix}
+         1 & 2104 & 5 & 1 & 45 \\
+         1 & 1416 & 3 & 2 & 40 \\
+         1 & 1534 & 3 & 2 & 30 \\
+         1 & 852 & 2 & 1 & 36  \\
+       \end{bmatrix} \ \ \ m \times (n+1)
 
-          Obtaining the minimum: solve for $\frac{\partial}{\partial\theta}J(\theta) = \ldots = 0$
+And using the values on last column to create the vector :math:`y`:
 
-        \subsubsection{If nD ($\theta \in \mathbb{R}^{n+1}$)}
+.. math::
+   X = \begin{bmatrix}
+         460 \\
+         232 \\
+         315 \\
+         178 \\
+       \end{bmatrix} \ \ \ m-dimensional vector
 
-          $J(\theta_{0}, \theta_{1}, \ldots, \theta_{m}) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^{2}$
+:math:`\theta = (X^{T}X)^{-1}X^{T}y \ \ \Leftarrow` The value of :math:`\theta`
+that minimize the cost function.
 
-          Obtaining the minimum: solve for $\frac{\partial}{\partial\theta}J(\theta) = \ldots = 0$ \ \ (for every $j$)
+When to use Gradient Descent or Normal Ecuation
+'''''''''''''''''''''''''''''''''''''''''''''''
 
-          Solve for $\theta_{0}, \theta_{1}, \ldots, \theta_{n}$
+For :math:`m` training examples, :math:`n` features:
 
-        \subsubsection{Example}
+Gradient Descent
+  - Need to choose :math:`\alpha`.
+  - Needs many iterations.
+  - Works well even when :math:`n` is large.
 
-          $m = 4$
+Normal Ecuation
+  - No need to choose :math:`\alpha`.
+  - Don't need toiterate.
+  - Slow if :math:`n` is very large.
 
-          \begin{tabular}{ | c | c | c | c | c | c |}
-            \  & Size ($feet^{2}$) & Number of bedrooms & Number of floors & Age of home (years) & Price (\$1000) \\
-            $x_{0}$ & $x_{1}$ & $x_{2}$ & $x_{3}$ & $x_{4}$ & y \\ \hline
-            1 & 2104 & 5 & 1 & 45 & 460 \\ \hline
-            1 & 1416 & 3 & 2 & 40 & 232 \\ \hline
-            1 & 1534 & 3 & 2 & 30 & 315 \\ \hline
-            1 & 852 & 2 & 1 & 36 & 178 \\ \hline
-          \end{tabular}
+Normal equation and non-invertibility
+-------------------------------------
 
-          Using the values from features to create the $X$ matrix:
+What if :math:`X^{T}T` is non-invertible?
+`````````````````````````````````````````
+* Redundant features (linearly dependent): e.g.
+  :math:`x_{1} = size in feet^{2}; x_{2} = size in m^{2}`
+* Too many features (e.g. :math:`m \leq n`): delete some features or use
+  regularization.
 
-          $X =
-          \begin{bmatrix}
-            1 & 2104 & 5 & 1 & 45 \\
-            1 & 1416 & 3 & 2 & 40 \\
-            1 & 1534 & 3 & 2 & 30 \\
-            1 & 852 & 2 & 1 & 36  \\
-          \end{bmatrix} \ \ \ m \times (n+1)$
+Logistic Regression
+===================
 
-          And using the values on last column to create the vector $y$:
+Classification
+--------------
 
-          $X =
-          \begin{bmatrix}
-            460 \\
-            232 \\
-            315 \\
-            178 \\
-          \end{bmatrix} \ \ \ m-dimensional vector$
+.. math::
+   y \in {0, 1}
 
-          $\theta = (X^{T}X)^{-1}X^{T}y \ \ \Leftarrow$ The value of $\theta$ that minimize the cost function.
+Using plain linear regression applied to a classification problem usually is
+not a good idea.
 
-        \subsubsection{When to use Gradient Descent or Normal Ecuation}
+Consecuences
+````````````
+:math:`h_{\theta}(x)` can be > 1 or < 0.
 
-          For $m$ training examples, $n$ features:
-
-          \textbf{Gradient Descent}
-          \begin{itemize}
-            \item Need to choose $\alpha$.
-            \item Needs many iterations.
-            \item Works well even when $n$ is large.
-          \end{itemize}
-
-          \textbf{Normal Ecuation}
-          \begin{itemize}
-            \item No need to choose $\alpha$.
-            \item Don't need toiterate.
-            \item Slow if $n$ is very large.
-          \end{itemize}
-
-    \section{Normal equation and non-invertibility}
-
-      \subsection{What if $X^{T}T$ is non-invertible?}
+A Logistic Regression alternative must be used to contain:
         
-        \begin{itemize}
-          \item Redundant features (linearly dependent): e.g. $x_{1} = size in feet^{2}; x_{2} = size in m^{2}$
-          \item Too many features (e.g. $m \leq n$): delete some features or use regularization.
-        \end{itemize}
-
-  \chapter{Logistic Regression}
-
-    \section{Classification}
-
-      $y \in {0, 1}$
-
-      Using plain linear regression applied to a classification problem usually
-      is not a good idea.
-
-      \subsection{Consecuences}
-
-        $h_{\theta}(x)$ can be $> 1$ or $< 0$
-
-        A Logistic Regression alternative must be used to contain:
-        
-        $0 \leq h_{\theta}(x) \leq 1$
+.. math::
+   0 \leq h_{\theta}(x) \leq 1
           
-    \section{Hypothesis Representation}
+Hypothesis Representation
+-------------------------
 
-      \subsection{Logistic Regression Model}
-        Want $0 \leq h_{\theta}(x) \leq 1$:
+Logistic Regression Model
+`````````````````````````
+Want :math:`0 \leq h_{\theta}(x) \leq 1`:
 
-        $h_{\theta}(x) = g(\theta^{T}x) \and g(z) = \frac{1}{1+e^{-z}} \Rightarrow g(z) = \frac{1}{1+e^{-\theta^{T}x}}$
+.. math::
+   h_{\theta}(x) = g(\theta^{T}x) \and g(z) = \frac{1}{1+e^{-z}} \Rightarrow
+   g(z) = \frac{1}{1+e^{-\theta^{T}x}}
 
-        $g(z)$ is the \textbf{Sigmoid function} or textbf{Logistic function}.
+:math:`g(z)` is the **Sigmoid function** or **Logistic function**.
 
-      \subsection{Interpretation of Hypothesis Output}
-
-        $h_{\theta}(x) =$ estimated probability that $y = 1$ on input $x$
-
-        
-
-\end{document}
+Interpretation of Hypothesis Output
+```````````````````````````````````
+:math:`h_{\theta}(x)` = estimated probability that y = 1 on input x
