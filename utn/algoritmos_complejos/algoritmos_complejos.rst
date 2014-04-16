@@ -1,7 +1,6 @@
-Algoritmos Complejos para Estructuras de Datos Avanzados
-********************************************************
-
-Año: 2014
+==========================================================
+ Algoritmos Complejos para Estructuras de Datos Avanzados
+==========================================================
 
 2014-03-26: Presentación
 ========================
@@ -10,14 +9,14 @@ Profesores
 ----------
 
 Pablo Sznajaleder
-  Twitter: @pabloszn_
-  Twitter: @thejavalistener_
-  Facebook: `The Java Listener`_
-  E-mail: pablosz@gmail.com
+  * Twitter: @pabloszn_
+  * Twitter: @thejavalistener_
+  * Facebook: `The Java Listener`_
+  * E-mail: pablosz@gmail.com
 
 Oscar Bruno
-  Twitter: @arbruno_
-  E-mail: oscarrbruno@gmail.com
+  * Twitter: @arbruno_
+  * E-mail: oscarrbruno@gmail.com
 
 Temas a ver en el curso
 -----------------------
@@ -48,7 +47,7 @@ Soluciones
   ./ejercicios/permutation/src/ar/com/ariel17/permutation/Permutation.java
 
 
-2014-05-09
+2014-04-09
 ==========
 
 Árboles binarios
@@ -63,6 +62,14 @@ Ejercicios
 
 * Agregar un array para guardar los resultados parciales.
 * Buscar sobre estrategia algorítmica y complejidad.
+
+2014-04-16
+==========
+
+Árbol N-Ario
+------------
+
+
 
 
 .. _@pabloszn: https://twitter.com/pabloszn

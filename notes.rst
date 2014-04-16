@@ -4,4 +4,5 @@ Content
 .. toctree::
    :maxdepth: 2
 
-   coursera/ml/ml
+   utn/index
+   coursera/index
