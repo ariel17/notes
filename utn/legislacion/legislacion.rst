@@ -1,36 +1,24 @@
 =============
  Legislación
 =============
---------------------
- Ariel Gerardo Ríos
---------------------
-------
- 2014
-------
-
-.. contents:: Table of contents
 
 2014-03-27: Presentación
-************************
+========================
 
 Profesores
 ----------
 
-* Liliana H. Maglio
-* Clara Berlanga
-
-  E-mail
-    claraberlanga2008@hotmail.com
-
-* Manuel Paiba
-
-  E-mail
-    jmpaiba@gmail.com
+Liliana H. Maglio
+  
+Clara Berlanga
+  E-mail: claraberlanga2008@hotmail.com
+Manuel Paiba
+  E-mail: jmpaiba@gmail.com
 
 Bibiografía
 -----------
 
-* Libro "Legislación"
+* Libro "Legislación".
 * Constitución Nacional de la República Argentina.
 
 Parciales
@@ -44,7 +32,7 @@ Ejercicios
 * Constitución Nacional: 1° parte.
 
 2014-04-03
-**********
+==========
 
 Métodos de resolución
 ---------------------
