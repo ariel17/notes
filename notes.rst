@@ -1,5 +1,5 @@
-Content
-=======
+Notes
+=====
 
 .. toctree::
    :maxdepth: 2

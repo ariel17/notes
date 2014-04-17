@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 3
 
    installation
+   rst-cheatsheet
    notes
 
 Indices and tables

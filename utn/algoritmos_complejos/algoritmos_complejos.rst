@@ -9,13 +9,13 @@ Profesores
 ----------
 
 Pablo Sznajaleder
-  * Twitter: @pabloszn_
-  * Twitter: @thejavalistener_
+  * Twitter: `@pabloszn`_
+  * Twitter: `@thejavalistener`_
   * Facebook: `The Java Listener`_
   * E-mail: pablosz@gmail.com
 
 Oscar Bruno
-  * Twitter: @arbruno_
+  * Twitter: `@arbruno`_
   * E-mail: oscarrbruno@gmail.com
 
 Temas a ver en el curso
@@ -57,6 +57,8 @@ Soluciones
 * Recorridos
 * Árbol binario de búsqueda
 
+TODO
+
 Ejercicios
 ----------
 
@@ -69,10 +71,14 @@ Ejercicios
 Árbol N-Ario
 ------------
 
+TODO
 
+Árbol AVL
+---------
 
+TODO
 
-.. _@pabloszn: https://twitter.com/pabloszn
-.. _@thejavalistener: https://twitter.com/thejavalistener
+.. _`@pabloszn`: https://twitter.com/pabloszn
+.. _`@thejavalistener`: https://twitter.com/thejavalistener
 .. _`The Java Listener`: https://www.facebook.com/thejavalistener
-.. _@arbruno: https://twitter.com/arbruno
+.. _`@arbruno`: https://twitter.com/arbruno
