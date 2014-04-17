@@ -23,10 +23,10 @@ Temas a ver en el curso
 
 * Recursividad
 * Árboles
-  * Árbol binario de búsqueda
-  * Árbol N-ario
-  * AVL
-  * B-Tree
+    - Árbol binario de búsqueda
+    - Árbol N-ario
+    - AVL
+    - B-Tree
 * Complejidad
 * Métodos de ordenamiento
 * Estrategia algorítmica
