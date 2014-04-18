@@ -1,6 +1,8 @@
 notes
 =====
 
+See it live on htto://www.ariel17.com.ar/notes/
+
 My notes on different courses. I have used [Sphinx](http://sphinx-doc.org/) as
 document generation tool, using
 [reStructuredText](http://docutils.sourceforge.net/) as markup to format the
