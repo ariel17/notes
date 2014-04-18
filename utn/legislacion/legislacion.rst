@@ -20,8 +20,9 @@ Bibiografía
 
 * Libro "Legislación".
 * Constitución Nacional de la República Argentina
-    * :download:`pdf <Constitucion_de_la_Nacion_argentina.pdf>`
-    * :download:`epub <Constitucion_de_la_Nacion_argentina.epub>`
+
+    + :download:`pdf <Constitucion_de_la_Nacion_argentina.pdf>`
+    + :download:`epub <Constitucion_de_la_Nacion_argentina.epub>`
 
 Parciales
 ---------
@@ -70,14 +71,20 @@ Dudas del capítulo 4
 * El domicilio que tenía el difunto determina el lugar en que se abre su
   sucesión.
 * Domicilio: Art. 90, 8vo:
-  > Los mayores de edad que sirven, o trabajan, o que están agregados en casa
-  > de otros, tienen el domicilio de la persona a quien sirven, o para quien
-  > trabajan, siempre que residan en la misma casa, o en habitaciones
-  > accesorias, con excepción de la mujer casada, que, como obrera doméstica,
-  > habita otra casa que la de su marido...
+
+    | Los mayores de edad que sirven, o trabajan, o que están agregados en casa
+    | de otros, tienen el domicilio de la persona a quien sirven, o para quien
+    | trabajan, siempre que residan en la misma casa, o en habitaciones
+    | accesorias, con excepción de la mujer casada, que, como obrera doméstica,
+    | habita otra casa que la de su marido...
+
   ¿Sólo se aplica a la mujer?
+
 * Emancipación: Art. 134, 1ro:
-  > Los emancipados no pueden ni con autorización judicial: hacer donación de
-  > bienes que ubiesen recibido a título gratuito.
+
+    | Los emancipados no pueden ni con autorización judicial: hacer donación de
+    | bienes que ubiesen recibido a título gratuito.
+  
   ¿A qué se refiere?
+
 * Patrimonio: ¿Por qué *es necesario* un patrimonio?
