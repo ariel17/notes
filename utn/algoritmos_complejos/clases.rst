@@ -1,22 +1,9 @@
-==========================================================
- Algoritmos Complejos para Estructuras de Datos Avanzados
-==========================================================
+=====================
+ Contenido de clases
+=====================
 
-2014-03-26: Presentación
-========================
-
-Profesores
-----------
-
-Pablo Sznajaleder
-  * Twitter: `@pabloszn`_
-  * Twitter: `@thejavalistener`_
-  * Facebook: `The Java Listener`_
-  * E-mail: pablosz@gmail.com
-
-Oscar Bruno
-  * Twitter: `@arbruno`_
-  * E-mail: oscarrbruno@gmail.com
+2014-03-26
+==========
 
 Temas a ver en el curso
 -----------------------
@@ -44,8 +31,10 @@ Soluciones
 ----------
 
 * Permutación de cadenas:
-  ./ejercicios/permutation/src/ar/com/ariel17/permutation/Permutation.java
 
+.. literalinclude:: ejercicios/permutation/src/ar/com/ariel17/permutation/Permutation.java
+   :language: java
+   :linenos: 
 
 2014-04-09
 ==========

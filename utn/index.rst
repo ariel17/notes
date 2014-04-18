@@ -6,4 +6,4 @@
    :maxdepth: 2
 
    algoritmos_complejos/algoritmos_complejos
-   legislacion/legislacion
+   legislacion/index
