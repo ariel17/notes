@@ -19,9 +19,12 @@ Machine learning algorithms
 ---------------------------
 
 * To be seen on this course:
+
   * Supervised learning
   * Unsupervised learning
+
 * Others:
+
   * Reinforcement learning
   * Recommender systems
 
@@ -99,6 +102,7 @@ it can be represented as :math:`\mathbb{R}^{2\times3}`.
 
 Matrix elements
 '''''''''''''''
+
 :math:`A_{ij} = i,j \ entry`; in the :math:`i` row, :math:`j` column. Examples:
 
 .. math::
@@ -288,6 +292,7 @@ than this way:
 
 Matrix-matrix multiplication
 ````````````````````````````
+
 .. math::
    \begin{bmatrix}
      1 & 3 & 2 \\
@@ -373,6 +378,7 @@ As a matrix multiplication:
 
 Matrix multiplication properties
 ````````````````````````````````
+
 * **Not conmutative:** :math:`A, B`; matrices. In general, :math:`A \times B
   \neq B \times A`.
 * **Associative:** :math:`A \times (B \times C) = (A \times B) \times C`
@@ -566,6 +572,7 @@ Gradient descent in practice I: Feature scaling
 
 Make sure features are on similar scale
 ```````````````````````````````````````
+
 Example:
 
 .. math::
@@ -595,6 +602,7 @@ Get every feature approximately a :math:`-1 \leq x_{i} \leq 1`
 
 Mean normalization
 ``````````````````
+
 Replace :math:`x_{i}` with :math:`x_{i} - \mu_{i}` to make features have
 approximately zero mean (do not apply to :math:`x_{0} = 1`).
 
@@ -621,6 +629,7 @@ Gradient descent in practice II: learning rate
 
 Making sure gradient descent is working correctly
 `````````````````````````````````````````````````
+
 Example automatic convergence test:
 
 Declare convergence if :math:`J(\theta)` decrases by less than :math:`10^{-3}`
@@ -631,6 +640,7 @@ smaller :math:`\alpha`**.
 
 Facts
 '''''
+
 * For sufficiently small :math:`\alpha`, :math:`J(\theta)` should decrease on
   every iteration.
 * But if :math:`\alpha` is too small, gradient descent can be slow to converge.
@@ -659,6 +669,7 @@ Changing to new features
 
 Polynomial regression
 `````````````````````
+
 .. math::
    Price = y
    Size = x
@@ -688,6 +699,7 @@ It is a method to solve for :math:`\theta` analytically.
 
 Intuition
 `````````
+
 If 1D (:math:`\theta \in \mathbb{R}`)
 '''''''''''''''''''''''''''''''''''''
 
@@ -712,6 +724,7 @@ Solve for :math:`\theta_{0}, \theta_{1}, \ldots, \theta_{n}`
 
 Example
 '''''''
+
 :math:`m = 4`
 
 +---------------+-------------------------+--------------------+------------------+---------------------+----------------+
@@ -771,6 +784,7 @@ Normal equation and non-invertibility
 
 What if :math:`X^{T}T` is non-invertible?
 `````````````````````````````````````````
+
 * Redundant features (linearly dependent): e.g.
   :math:`x_{1} = size in feet^{2}; x_{2} = size in m^{2}`
 * Too many features (e.g. :math:`m \leq n`): delete some features or use
@@ -790,6 +804,7 @@ not a good idea.
 
 Consecuences
 ````````````
+
 :math:`h_{\theta}(x)` can be > 1 or < 0.
 
 A Logistic Regression alternative must be used to contain:
@@ -802,6 +817,7 @@ Hypothesis Representation
 
 Logistic Regression Model
 `````````````````````````
+
 Want :math:`0 \leq h_{\theta}(x) \leq 1`:
 
 .. math::
@@ -812,4 +828,129 @@ Want :math:`0 \leq h_{\theta}(x) \leq 1`:
 
 Interpretation of Hypothesis Output
 ```````````````````````````````````
+
 :math:`h_{\theta}(x)` = estimated probability that y = 1 on input x
+
+Decision boundary
+-----------------
+
+TODO
+
+Cost function
+-------------
+
+TODO
+
+Simplified cost function and gradient descent
+---------------------------------------------
+
+TODO
+
+Advanced optimization
+---------------------
+
+TODO
+
+Multiclass classification: One-vs-all
+--------------------------------------
+
+TODO
+
+Regularization
+==============
+
+The problem of overfitting
+--------------------------
+
+TODO
+
+Cost function
+-------------
+
+TODO
+
+Regularized linear regression
+-----------------------------
+
+TODO
+
+Regularized logistic regression
+-------------------------------
+
+TODO
+
+Neural Networks: representation
+===============================
+
+Non-linear hypoteses
+--------------------
+
+TODO
+
+Neurons and the brain
+---------------------
+
+TODO
+
+Model representation I
+----------------------
+
+TODO
+
+Model representation II
+-----------------------
+
+TODO
+
+Examples and intuitions I
+-------------------------
+
+TODO
+
+Examples and intuitions II
+--------------------------
+
+TODO
+
+Multiclass classification
+-------------------------
+
+TODO
+
+Neural Networks: learning
+=========================
+
+Cost function
+-------------
+
+TODO
+
+Backpropagation algorithm
+-------------------------
+
+TODO
+
+Implementation note-unrolling parameters
+----------------------------------------
+
+TODO
+
+Gradient checking
+-----------------
+
+TODO
+
+Random initialization
+---------------------
+
+TODO
+
+Putting it all together
+-----------------------
+
+TODO
+
+Autonomous driving
+------------------
+
+TODO
