@@ -19,7 +19,9 @@ Bibiografía
 -----------
 
 * Libro "Legislación".
-* Constitución Nacional de la República Argentina.
+* Constitución Nacional de la República Argentina
+    * :download:`pdf <Constitucion_de_la_Nacion_argentina.pdf>`
+    * :download:`epub <Constitucion_de_la_Nacion_argentina.epub>`
 
 Parciales
 ---------
