@@ -115,6 +115,6 @@ Bibliografía
 
 * Wikipedia
 
-    + C. A. R. Hoare: http://es.wikipedia.org/wiki/C._A._R._Hoare
-    + Quicksort: http://es.wikipedia.org/wiki/Quicksort
+  + C. A. R. Hoare: http://es.wikipedia.org/wiki/C._A._R._Hoare
+  + Quicksort: http://es.wikipedia.org/wiki/Quicksort
 
