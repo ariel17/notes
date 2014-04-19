@@ -5,5 +5,5 @@
 .. toctree::
    :maxdepth: 2
 
-   algoritmos_complejos/algoritmos_complejos
+   algoritmos_complejos/index
    legislacion/index

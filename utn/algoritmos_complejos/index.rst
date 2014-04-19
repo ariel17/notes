@@ -6,6 +6,7 @@
    :maxdepth: 2
 
    clases
+   exposicion
 
 Profesores
 ==========
@@ -15,6 +16,7 @@ Pablo Sznajaleder
   * Twitter: `@thejavalistener`_
   * Facebook: `The Java Listener`_
   * E-mail: pablosz@gmail.com
+
 Oscar Bruno
   * Twitter: `@arbruno`_
   * E-mail: oscarrbruno@gmail.com
