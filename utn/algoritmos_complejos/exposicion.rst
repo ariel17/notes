@@ -25,16 +25,6 @@ problema complicado, en muchos sencillos, pero además es el más rápido conoci
 para hacer esta tarea. Está matemáticamente demostrado que no se puede hacer un
 algoritmo de ordenación más rápido que Quicksort.
 
-Estrategia
-----------
-
-El algoritmo trabaja de la siguiente forma:
-
-* Elegir un elemento de la lista de elementos a ordenar, al que llamaremos pivote.
-* Resituar los demás elementos de la lista a cada lado del pivote, de manera que a un lado queden todos los menores que él, y al otro los mayores. Los elementos iguales al pivote pueden ser colocados tanto a su derecha como a su izquierda, dependiendo de la implementación deseada. En este momento, el pivote ocupa exactamente el lugar que le corresponderá en la lista ordenada.
-* La lista queda separada en dos sublistas, una formada por los elementos a la izquierda del pivote, y otra por los elementos a su derecha.
-* Repetir este proceso de forma recursiva para cada sublista mientras éstas contengan más de un elemento. Una vez terminado este proceso todos los elementos estarán ordenados.
-
 Su autor
 --------
 
@@ -54,10 +44,39 @@ Descubrió el algoritmo Quicksort en 1960 intentando facilitar la búsqueda de
 palabras en el diccionario. Actualmente trabaja como investigador senior para
 Microsoft en Cambridge.
 
+Estrategia
+----------
+
+El algoritmo trabaja de la siguiente forma:
+
+* Elegir un elemento de la lista de elementos a ordenar, al que llamaremos
+  **pivote**.
+* Resituar los demás elementos de la lista a cada lado del pivote, de manera
+  que a un lado queden todos los menores que él, y al otro los mayores. Los
+  elementos iguales al pivote pueden ser colocados tanto a su derecha como a su
+  izquierda, dependiendo de la implementación deseada. En este momento, el
+  pivote ocupa exactamente el lugar que le corresponderá en la lista ordenada.
+* La lista queda separada en dos sublistas, una formada por los elementos a la
+  izquierda del pivote, y otra por los elementos a su derecha.
+* Repetir este proceso de forma recursiva para cada sublista mientras éstas
+  contengan más de un elemento. Una vez terminado este proceso todos los
+  elementos estarán ordenados.
+
+.. figure:: _img/Sorting_quicksort_anim.gif
+   :width: 400 px
+
+   Quicksort en acción
+
 Complejidad
 -----------
 
-En el caso promedio, el orden es O(n·log n).
+En el caso promedio, el orden es :math:`O(n*log n)`.
+
+.. figure:: _img/nlogn.png
+   :width: 400 px
+
+   Complejidad :math:`O(n*log n)`
+
 
 Escenarios
 ----------
@@ -65,8 +84,16 @@ Escenarios
 Como se puede suponer, la eficiencia del algoritmo depende de la posición en la
 que termine el pivote elegido.
 
-* En el mejor caso, el pivote termina en el centro de la lista, dividiéndola en dos sublistas de igual tamaño. En este caso, el orden de complejidad del algoritmo es O(n·log n).
-* En el peor caso, el pivote termina en un extremo de la lista. El orden de complejidad del algoritmo es entonces de O(n²). El peor caso dependerá de la implementación del algoritmo, aunque habitualmente ocurre en listas que se encuentran ordenadas, o casi ordenadas. Pero principalmente depende del pivote, si por ejemplo el algoritmo implementado toma como pivote siempre el primer elemento del array, y el array que le pasamos está ordenado, siempre va a generar a su izquierda un array vacío, lo que es ineficiente.
+* En el mejor caso, el pivote termina en el centro de la lista, dividiéndola en
+  dos sublistas de igual tamaño. En este caso, el orden de complejidad del
+  algoritmo es :math:`O(n*log n)`.
+* En el peor caso, el pivote termina en un extremo de la lista. El orden de
+  complejidad del algoritmo es entonces de O(n²). El peor caso dependerá de la
+  implementación del algoritmo, aunque habitualmente ocurre en listas que se
+  encuentran ordenadas, o casi ordenadas. Pero principalmente depende del
+  pivote, si por ejemplo el algoritmo implementado toma como pivote siempre el
+  primer elemento del array, y el array que le pasamos está ordenado, siempre
+  va a generar a su izquierda un array vacío, lo que es ineficiente.
 
 Implementación
 --------------
@@ -89,4 +116,5 @@ Bibliografía
 * Wikipedia
 
     + C. A. R. Hoare: http://es.wikipedia.org/wiki/C._A._R._Hoare
+    + Quicksort: http://es.wikipedia.org/wiki/Quicksort
 
