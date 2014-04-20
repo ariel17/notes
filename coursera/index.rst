@@ -1,7 +1,11 @@
 Coursera
 ========
 
-.. toctree::
-   :maxdepth: 2
+An on line course provider.
 
-   ml/ml
+:web site: https://www.coursera.org/ 
+
+.. toctree::
+   :maxdepth: 3
+
+   ml/index
