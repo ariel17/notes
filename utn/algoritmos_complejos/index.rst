@@ -6,6 +6,7 @@
    :maxdepth: 2
 
    clases
+   ejercicios
    exposicion
 
 Profesores

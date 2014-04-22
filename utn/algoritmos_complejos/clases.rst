@@ -19,30 +19,6 @@ Temas a ver en el curso
 * Estrategia algorítmica
 * Grafos
 
-Ejercicios
-----------
-
-#. ¿Por qué tarda tanto una clase que calcula la serie de Fibonacci?
-#. ¿Cómo se podría resolver para que no tarde tanto?
-#. Implementar Fibonacci.
-#. ¿Cuánto tiempo tardaría la ejecución si se pide un Fibonacci de 100? Estimar.
-#. Hacer un programa que realice todas las permutaciones de una cadena.
-
-Soluciones
-----------
-
-* Implementación de Fibonacci:
-
-.. literalinclude:: ejercicios/fibonacci/src/ar/com/ariel17/fibonacci/Fibonacci.java
-   :language: java
-   :linenos: 
-
-* Permutación de cadenas:
-
-.. literalinclude:: ejercicios/permutation/src/ar/com/ariel17/permutation/Permutation.java
-   :language: java
-   :linenos: 
-
 2014-04-09
 ==========
 
