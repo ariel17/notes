@@ -3,3 +3,6 @@
 
 # Build directories
 _build
+
+# Other IDE metadata
+workbench*

@@ -28,7 +28,7 @@ algoritmo de ordenación más rápido que Quicksort.
 Su autor
 --------
 
-.. figure:: _img/CAR_Hoare.jpg
+.. figure:: _static/img/CAR_Hoare.jpg
    :width: 300 px
 
    Charles Antony Richard Hoare
@@ -62,7 +62,7 @@ El algoritmo trabaja de la siguiente forma:
   contengan más de un elemento. Una vez terminado este proceso todos los
   elementos estarán ordenados.
 
-.. figure:: _img/Sorting_quicksort_anim.gif
+.. figure:: _static/img/Sorting_quicksort_anim.gif
    :width: 400 px
 
    Quicksort en acción
@@ -72,7 +72,7 @@ Complejidad
 
 En el caso promedio, el orden es :math:`O(n*log n)`.
 
-.. figure:: _img/nlogn.png
+.. figure:: _static/img/nlogn.png
    :width: 400 px
 
    Complejidad :math:`O(n*log n)`
