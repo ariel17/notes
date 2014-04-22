@@ -160,8 +160,58 @@ ella (**fuente** del Derecho de carácter **vinculante**). Sus elementos son:
 Jurisprudencia
 --------------
 
-TODO
+Conjunto de sentencias judiciales concordantes sobre un mismo tema. Las
+sentencias son normas jurídicas individuales dictadas por los jueces en un caso
+concreto. La jurisprudencia **no obliga** a los jueces a fallar conforme a ella
+en casos similares ulteriores (fuente de derecho **no vinculante**).
 
+Organización del Poder Judicial
+```````````````````````````````
+
+* 1ra Instancia :math:`\Rightarrow` Juzgados Nacionales de Primera Instancia en
+  lo Civil
+* 2da Instancia :math:`\Rightarrow` Cámara Nacional de Apelaciones en lo Civil
+* 3ra Instancia :math:`\Rightarrow` Corte Suprema de Justicia de la Nación
+
+1ra Instancia: Juzgados Nacionales de Primera Instancia en lo Civil
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Son unipersonales. En ellos se inicia el proceso o Juicio, se accede por sorteo
+y continua hasta la sentencia.
+
+2da Instancia: Cámara Nacional de Apelaciones en lo Civil
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Nuestro sistema judicial garantiza el derecho del judiciable de apelar y
+concurrir al tribunal de segunda instancia, para que en el caso de que no esté
+conforme con ella, esa sentencia pueda ser revisada por la Cámara de
+Apelaciones. Ésta se divide en Salas; tribunales de 3 jueces cada uno y son
+asignadas por sorteo.
+
+Una vez que se expide la Cámara el juicio adquiere la situación de **cosa
+juzgada** y no puede volver a plantearse ese conflicto para las mismas partes
+(queda firme).
+
+:Inseguridad jurídica (escándalo): según la sala que me toque en el sorteo,
+                                   tendré un derecho o lo perderé.
+
+:Fallo plenario: la Cámara de Apelaciones debe reunirse en pleno para
+                 **unificar jurisprudencia** y lograr una sola interpretación
+                 sobre el tema que produjo el escándalo. Es una **fuente
+                 vinculante**. Esta jurisprudencia sólo puede ser reemplazada
+                 por otro fallo plenario.
+
+La doctrina
+```````````
+
+Es el producto de la actividad científica de los juristas. No tiene caracter
+vinculante. Es un medio auxiliar para la comprensión de normas jurídicas e
+interpretación.
+
+La ley
+``````
+
+Es fuente de carácter vinculante (aplicación obligatoria).
 
 Capítulo II
 ===========
