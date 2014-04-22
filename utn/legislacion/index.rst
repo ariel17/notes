@@ -5,9 +5,10 @@
 .. toctree::
    :maxdepth: 2
 
-   clases
-   resumen_libro
    archivos
+   resumen_libro
+   clases
+   ejercitacion
 
 Profesores
 ==========
