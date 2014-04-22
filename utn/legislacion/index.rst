@@ -22,7 +22,7 @@ Manuel Paiba
 Bibiografía
 ===========
 
-* Libro "Legislación".
+* Libro "Legislación - Lecciones de Derecho".
 * Constitución Nacional de la República Argentina
   :download:`pdf <_static/Constitucion_de_la_Nacion_argentina.pdf>`
   :download:`epub <_static/Constitucion_de_la_Nacion_argentina.epub>`
