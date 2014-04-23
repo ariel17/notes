@@ -52,3 +52,15 @@ retornar un conjunto de datos conteniendo las cadenas "PABLO", "PAULA" y
 agregaría "PEDRO".
 
 :download:`Descargar la estructura de árbol a cumplir <_static/doc/Ejemplo-Arbol-n-ario.xls>`
+
+Implementación de árbol
+-----------------------
+
+.. literalinclude:: _src/tree/src/ar/com/ariel17/tree/Node.java
+   :language: java
+   :linenos: 
+
+.. literalinclude:: _src/tree/src/ar/com/ariel17/tree/Tree.java
+   :language: java
+   :linenos: 
+
