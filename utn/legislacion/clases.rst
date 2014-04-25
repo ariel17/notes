@@ -65,3 +65,13 @@ Dudas del capítulo 4
   ¿A qué se refiere?
 
 * Patrimonio: ¿Por qué *es necesario* un patrimonio?
+
+2014-04-17
+==========
+
+Feriado por Jueves Santo.
+
+2014-04-24
+==========
+
+Revisión capítulo IV.
