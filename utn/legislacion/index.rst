@@ -6,9 +6,10 @@
    :maxdepth: 2
 
    archivos
-   resumen_libro
    clases
    ejercitacion
+   resumen_libro
+   trabajo_practico
 
 Profesores
 ==========
