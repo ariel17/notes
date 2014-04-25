@@ -9,6 +9,7 @@
    clases
    ejercitacion
    resumen_libro
+   autoevaluacion
    trabajo_practico
 
 Profesores
