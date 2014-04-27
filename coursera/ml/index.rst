@@ -11,7 +11,8 @@ On line course provided by Standford University.
 .. toctree::
    :maxdepth: 2
 
-   course
+   course/index
    exercices
+   files
 
 .. _`@AndrewYNG`: https://twitter.com/AndrewYNg
