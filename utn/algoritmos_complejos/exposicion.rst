@@ -168,6 +168,12 @@ Implementación para selección aleatoria del pivote
    :language: java
    :linenos: 
 
+Implementación de estrategia "a 3 bandas" para selección del pivote
+```````````````````````````````````````````````````````````````````
+
+.. literalinclude:: _src/quicksort/src/ar/com/ariel17/quicksort/pivot/ThreeInARowPivotSelector.java
+   :language: java
+   :linenos: 
 
 Having fun with Quicksort (?)
 =============================
