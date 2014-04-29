@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author Ariel Gerardo Ríos (ariel.gerardo.rios@gmail.com)
  */
-public interface PivotSelector {
+public interface PivotSelector<T extends Comparable<? super T>> {
 
     /**
      * TODO
@@ -21,7 +21,17 @@ public interface PivotSelector {
      * @param list TODO
      * @return TODO
      */
-    int select(List<T> list);
+    Pivot<T> select(List<T> list);
+
+    /**
+     * TODO
+     *
+     * @param list TODO
+     * @param minIndex TODO
+     * @param maxIndex TODO
+     * @return TODO
+     */
+    Pivot<T> select(List<T> list, Integer minIndex, Integer maxIndex);
 }
 
 // vim:ft=java ts=4 tw=80 cc=+1: 

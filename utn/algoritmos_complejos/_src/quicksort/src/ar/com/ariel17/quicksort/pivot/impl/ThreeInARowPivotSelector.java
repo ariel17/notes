@@ -1,5 +1,5 @@
 /**
- * RandomPivotSelector
+ * ThreeInARowPivotSelector
  *
  * TODO Description if available.
  */
@@ -17,15 +17,15 @@ import ar.com.ariel17.quicksort.pivot.PivotSelector;
  *
  * @author Ariel Gerardo Ríos (ariel.gerardo.rios@gmail.com)
  */
-public class RandomPivotSelector<T extends Comparable<? super T>> implements
-PivotSelector<T> {
+public class ThreeInARowPivotSelector<T extends Comparable<? super T>>
+    implements PivotSelector<T> {
 
     private Random random = new Random();
 
     /**
      * Constructor.
      */
-    public RandomPivotSelector() {
+    public ThreeInARowPivotSelector() {
     }
 
     /**
@@ -49,8 +49,21 @@ PivotSelector<T> {
             return new Pivot<T>(0, list.get(0));
         }
 
-        Integer randomIndex = random.nextInt(maxIndex - minIndex) + minIndex;
-        return new Pivot<T>(randomIndex, list.get(randomIndex));
+        T minor = null;
+        Integer minorIndex = null;
+
+        for (int i = 0; i <= 2; i++) {
+
+            Integer randomIndex = random.nextInt(maxIndex - minIndex) +
+                minIndex;
+
+            if (i== 0 || list.get(randomIndex).compareTo(minor) < 0) {
+                minor = list.get(randomIndex);
+                minorIndex = randomIndex;
+            }
+        }
+
+        return new Pivot<T>(minorIndex, minor);
     }
 }
 
