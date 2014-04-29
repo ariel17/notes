@@ -2,22 +2,20 @@
  Exposición: Algoritmos de ordenamiento
 ========================================
 
-Algoritmos que se expondrán
-    + Quicksort_
-    + Heapsort_
-    + Mergesort_
-
-Fecha de exposición
-    2014-04-30
+:Fecha de exposición: 2014-05-07
 
 Introducción
 ============
 
-- TODO: Qué son.
-- TODO: Cuándo se aplica.
+Qué es un algoritmo de ordenamiento
+-----------------------------------
 
-Quicksort_
-==========
+Un algoritmo de ordenamiento es conjunto prescrito de reglas ordenadas y
+finitas para poner los elementos de un vector o una lista en su correspondiente
+lugar dado por una relación de orden.
+
+Quicksort
+=========
 
 La función de este algoritmo es ordenar una lista de elementos del mismo tipo y
 está basado en la técnica "divide y vencerás", de modo que convierte un
@@ -51,7 +49,15 @@ Estrategia
 El algoritmo trabaja de la siguiente forma:
 
 * Elegir un elemento de la lista de elementos a ordenar, al que llamaremos
-  **pivote**.
+  **pivote**. Esta acción creará 3 particiones a partir de la lista inicial,
+  conformadas de la siguiente manera:
+
+  + ``L1``: Contendrá todos los elementos de ``L`` menos ``v`` que sean menores
+    o iguales que ``v``.
+  + ``L2``: Contiene a ``v``.
+  + ``L3``: Contendrá todos los elementos de ``L`` menos ``v`` que sean mayores
+    o iguales que ``v``.
+
 * Resituar los demás elementos de la lista a cada lado del pivote, de manera
   que a un lado queden todos los menores que él, y al otro los mayores. Los
   elementos iguales al pivote pueden ser colocados tanto a su derecha como a su
@@ -100,32 +106,8 @@ elegido.
 
    Complejidad :math:`O(n^2)`
 
-Implementación
---------------
-
 Eligiendo el Pivote
-```````````````````
-
-La elección del pivote ``v`` determina las particiones de la lista ``L`` de
-datos y **de ello dependerá la eficiencia del algoritmo**. Estas particiones
-van a estar conformadas de la siguiente manera:
-
-* ``L1``: Contiene todos los elementos de ``L`` menos ``v`` que sean menores o
-  iguales que ``v``.
-* ``L2``: Contiene a ``v``.
-* ``L3``: Contiene todos los elementos de ``L`` menos ``v`` que sean mayores o
-  iguales que ``v``.
-
-De aquí se desprenden 2 escenarios:
-
-* **Mejor escenario**: el pivote termina en el centro de la lista, dividiéndola
-  en dos sublistas de igual tamaño. En este caso, el orden de complejidad del
-  algoritmo es :math:`O(n*log(n))`.
-* **Peor escenario**: el pivote termina en un extremo de la lista. El orden de
-  complejidad del algoritmo es entonces de :math:`O(n^2)`. Aunque dependerá en
-  gran parte de la implementación del algoritmo, habitualmente ocurre en listas
-  que se encuentran ordenadas, o casi ordenadas (se va a generar a su izquierda
-  un array vacío, lo que es ineficiente).
+-------------------
 
 Las estrategias más utilizadas para la selección del pivote son:
 
@@ -144,7 +126,7 @@ Las estrategias más utilizadas para la selección del pivote son:
   dicho elemento está en la lista.
 
 Moviendo elementos
-``````````````````
+------------------
 
 Para reposicionar los elementos una vez seleccionado el pivote se utilizan dos
 índices: sean ``i`` como índice izquierdo, ``j`` como índice derecho y
@@ -160,41 +142,44 @@ Para reposicionar los elementos una vez seleccionado el pivote se utilizan dos
   pivote, porque sabemos que a un lado los elementos son todos menores y al
   otro son todos mayores (o habrían sido intercambiados).
 
-Implementación en Java
-``````````````````````
+Ejemplo de implementación
+-------------------------
 
-- TODO ejemplo de implementación.
+Diagrama de clases
+``````````````````
+
+.. figure:: _src/quicksort/doc/class_diagram.png
+   :width: 600 px
+   :align: center
+
+   Diagrama de clases para implementación propuesta.
+
+Clase Quicksort
+```````````````
+
+.. literalinclude:: _src/quicksort/src/ar/com/ariel17/quicksort/Quicksort.java
+   :language: java
+   :linenos: 
+
+Implementación para selección aleatoria del pivote
+``````````````````````````````````````````````````
+
+.. literalinclude:: _src/quicksort/src/ar/com/ariel17/quicksort/pivot/RandomPivotSelector.java
+   :language: java
+   :linenos: 
+
 
 Having fun with Quicksort (?)
 =============================
 
-
-
-Heapsort_
-=========
-
-- TODO en qué consiste.
-- TODO quién lo creó.
-- TODO complejidad.
-- TODO mejores escenarios.
-- TODO peores escenarios.
-- TODO ejemplo de implementación.
-
-Mergesort_
-==========
-
-- TODO en qué consiste.
-- TODO quién lo creó.
-- TODO complejidad.
-- TODO mejores escenarios.
-- TODO peores escenarios.
-- TODO ejemplo de implementación.
+TODO
 
 Bibliografía
 ============
 
 #. Wikipedia
 
+  + Algoritmo de ordenamiento: http://es.wikipedia.org/wiki/Algoritmo_de_ordenamiento
   + C. A. R. Hoare: http://es.wikipedia.org/wiki/C._A._R._Hoare
   + Quicksort: http://es.wikipedia.org/wiki/Quicksort
   + Quicksort - Técnicas de elección del pivote:
