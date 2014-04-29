@@ -149,7 +149,7 @@ Diagrama de clases
 ``````````````````
 
 .. figure:: _src/quicksort/doc/class_diagram.png
-   :width: 600 px
+   :width: 800 px
    :align: center
 
    Diagrama de clases para implementación propuesta.
@@ -164,14 +164,14 @@ Clase Quicksort
 Implementación para selección aleatoria del pivote
 ``````````````````````````````````````````````````
 
-.. literalinclude:: _src/quicksort/src/ar/com/ariel17/quicksort/pivot/RandomPivotSelector.java
+.. literalinclude:: _src/quicksort/src/ar/com/ariel17/quicksort/pivot/impl/RandomPivotSelector.java
    :language: java
    :linenos: 
 
 Implementación de estrategia "a 3 bandas" para selección del pivote
 ```````````````````````````````````````````````````````````````````
 
-.. literalinclude:: _src/quicksort/src/ar/com/ariel17/quicksort/pivot/ThreeInARowPivotSelector.java
+.. literalinclude:: _src/quicksort/src/ar/com/ariel17/quicksort/pivot/impl/ThreeInARowPivotSelector.java
    :language: java
    :linenos: 
 
