@@ -107,7 +107,8 @@ Eligiendo el Pivote
 ```````````````````
 
 La elección del pivote ``v`` determina las particiones de la lista ``L`` de
-datos; estas particiones van a estar conformadas de la siguiente manera:
+datos y **de ello dependerá la eficiencia del algoritmo**. Estas particiones
+van a estar conformadas de la siguiente manera:
 
 * ``L1``: Contiene todos los elementos de ``L`` menos ``v`` que sean menores o
   iguales que ``v``.
@@ -115,31 +116,49 @@ datos; estas particiones van a estar conformadas de la siguiente manera:
 * ``L3``: Contiene todos los elementos de ``L`` menos ``v`` que sean mayores o
   iguales que ``v``.
 
-Es importante intentar que al seleccionar el pivote v las particiones ``L1`` y
-``L3`` tengan un tamaño idéntico dentro de lo posible.
+De aquí se desprenden 2 escenarios:
 
-Elegir el primero o el último de la lista nunca es una buena idea ya que los
-elementos de la lista no están uniformemente distribuidos. Por otro lado, si
-contamos con un buen generador de números aleatorios, podemos elegir un pivote
-al azar de entre todos los elementos de la lista. Esta estrategia es segura
-puesto que es improbable que un pivote al azar de como resultado una partición
-mala, pero tiene como contrapartida que en algunas ocasiones si puede arrojar
-un resultado de :math:`O(n^2)`, además, la elección de números aleatorios puede
-incrementar el tiempo de ejecución del algoritmo.
+* **Mejor escenario**: el pivote termina en el centro de la lista, dividiéndola
+  en dos sublistas de igual tamaño. En este caso, el orden de complejidad del
+  algoritmo es :math:`O(n*log(n))`.
+* **Peor escenario**: el pivote termina en un extremo de la lista. El orden de
+  complejidad del algoritmo es entonces de :math:`O(n^2)`. Aunque dependerá en
+  gran parte de la implementación del algoritmo, habitualmente ocurre en listas
+  que se encuentran ordenadas, o casi ordenadas (se va a generar a su izquierda
+  un array vacío, lo que es ineficiente).
 
-Una buena estrategia para solucionar la selección del pivote ámpliamente
-extendida es la conocida como “a tres bandas”. En esta estrategia lo que se
-persigue es hacer una media con los valores de tres de los elementos de la
-lista. Por ejemplo si nuestra lista es ``[ 8, 4, 9, 3, 5, 7, 1, 6, 2 ]`` la
-media sería :math:`( 8 + 2 + 5 ) / 3 = 5` lo que daría lugar a las siguientes
-particiones::
+Las estrategias más utilizadas para la selección del pivote son:
 
-   L1 = [ 8, 9, 7, 6 ]
-   L2 = [ 5 ]
-   L3 = [ 1, 2, 4, 3 ]
+* **Tomar un elemento cualquiera**: ésta es la estrategia por defecto. No
+  requiere ningún cálculo adicional y por lo tanto es rápido. Sin embargo, esta
+  elección *a ciegas* siempre provoca que el algoritmo tenga un orden de
+  :math:`O(n^2)` para los pivotes ubicados en los extremos.
+* **Recorrer la lista para determinar qué elemento ocupará la posición central
+  de la lista y elegirlo como pivote**: puede hacerse en :math:`O(n)` y asegura
+  que hasta en el peor de los casos, el algoritmo sea :math:`O(n*log(n))`. Su
+  contrapartida se basa en que el cálculo adicional rebaja bastante la
+  eficiencia del algoritmo en el caso promedio.
+* **A 3 bandas**: tomar tres elementos de la lista y compararlos, eligiendo el
+  valor del medio como pivote; otros hacen el promedio de los tres para obtener
+  el elemento a ser seleccionado como pivote pero hay que dar por hecho que
+  dicho elemento está en la lista.
 
-Esta estrategia no nos asegura que siempre nos dará la mejor selección del
-pivote, sino que estadísticamente, la elección del pivote sea buena.
+Moviendo elementos
+``````````````````
+
+Para reposicionar los elementos una vez seleccionado el pivote se utilizan dos
+índices: sean ``i`` como índice izquierdo, ``j`` como índice derecho y
+``L`` una lista de elementos a ordenarse:
+
+* Recorrer la lista simultáneamente con ``i`` y ``j``: por la izquierda con
+  ``i`` (desde el primer elemento), y por la derecha con j (desde el último
+  elemento).
+* Cuando ``L[i]`` sea mayor que el pivote y ``L[j]`` sea menor, se intercambian
+  los elementos en esas posiciones.
+* Repetir esto hasta que se crucen los índices.
+* El punto en que se cruzan los índices es la posición adecuada para colocar el
+  pivote, porque sabemos que a un lado los elementos son todos menores y al
+  otro son todos mayores (o habrían sido intercambiados).
 
 Implementación en Java
 ``````````````````````
@@ -178,6 +197,8 @@ Bibliografía
 
   + C. A. R. Hoare: http://es.wikipedia.org/wiki/C._A._R._Hoare
   + Quicksort: http://es.wikipedia.org/wiki/Quicksort
+  + Quicksort - Técnicas de elección del pivote:
+    http://es.wikipedia.org/wiki/Quicksort#T.C3.A9cnicas_de_elecci.C3.B3n_del_pivote 
 
 #. Blogs
 
