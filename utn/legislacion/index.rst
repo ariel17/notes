@@ -8,7 +8,7 @@
    archivos
    clases
    ejercitacion
-   resumen_libro
+   resumen_libro/index
    autoevaluacion
    trabajo_practico
 
