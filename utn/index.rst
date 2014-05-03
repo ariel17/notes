@@ -7,3 +7,4 @@
 
    algoritmos_complejos/index
    legislacion/index
+   sistemas_operativos/index
