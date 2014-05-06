@@ -21,4 +21,5 @@ How to install
 Generating content
 ------------------
 
-    (notes-env)~/notes$ make html
+    (notes-env)~/notes$ make html  # content will be on _build directory
+    (notes-env)~/notes$ x-www-browser _build/html/index.html
