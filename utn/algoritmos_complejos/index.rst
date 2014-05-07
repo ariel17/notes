@@ -12,7 +12,7 @@
 Profesores
 ==========
 
-Pablo Sznajaleder
+Pablo Sznajdleder
   * Twitter: `@pabloszn`_
   * Twitter: `@thejavalistener`_
   * Facebook: `The Java Listener`_
