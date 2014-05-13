@@ -178,7 +178,9 @@ Implementación de estrategia "a 3 bandas" para selección del pivote
 Having fun with Quicksort (?)
 =============================
 
-TODO
+.. figure:: _static/img/one_does_not_simply.jpg
+   :width: 500 px
+   :align: center
 
 Bibliografía
 ============
