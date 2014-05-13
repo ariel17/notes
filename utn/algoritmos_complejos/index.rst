@@ -7,7 +7,7 @@
 
    clases
    ejercicios
-   exposicion
+   exposicion/index
 
 Profesores
 ==========
