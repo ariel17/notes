@@ -1,35 +1,27 @@
-==================
- Trabajo Práctico
-==================
+===========
+ Enunciado
+===========
 
-Fecha de Entrega
-================
-
-Jueves 2014-05-22
-
-Enunciado
-=========
-
-* :download:`Descargar formato original <_static/TP_1_2014.doc>`
+* :download:`Descargar formato original <_static/doc/TP_1_2014.doc>`
 
 Se trabajará sobre el diario de fechas comprendidas desde la fecha de recepción
 de las consignas hasta la entrega del TP y deberán acompañarse las noticias
 seleccionadas y analizadas, siendo las mismas de diarios online se deberá
 adjuntar la impresión de las mismas.
 
-#. Anote a continuación de cada uno de los ítemes que siguen **la síntesis** de
-   una noticia que se relacione con los conceptos del ítem y **la
-   justificación** (síntesis: ¿sobre qué trata la noticia? y, además,
-   explicación: ¿por qué se relaciona con ese ítem?)
+Anote a continuación de cada uno de los ítemes que siguen **la síntesis** de
+una noticia que se relacione con los conceptos del ítem y **la justificación**
+(síntesis: ¿sobre qué trata la noticia? y, además, explicación: ¿por qué se
+relaciona con ese ítem?)
 
-   + Forma representativa, republicana o federal de gobierno.
-   + Cumplimiento y/o incumplimiento de la ley.
-   + Actos jurídicos.
-   + Hechos jurídicos.
-   + Derechos reales.
-   + Obligaciones.
-   + Responsabilidad civil.
-   + Derechos y garantías constitucionales.  
++ Forma representativa, republicana o federal de gobierno.
++ Cumplimiento y/o incumplimiento de la ley.
++ Actos jurídicos.
++ Hechos jurídicos.
++ Derechos reales.
++ Obligaciones.
++ Responsabilidad civil.
++ Derechos y garantías constitucionales.  
 
 Aclaraciones
 ============
