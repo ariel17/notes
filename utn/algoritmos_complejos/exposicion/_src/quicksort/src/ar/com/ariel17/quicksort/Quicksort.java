@@ -1,7 +1,7 @@
 /**
  * Quicksort
  *
- * TODO Description if available.
+ * Sort algorithm class implementation and program entry point.
  */
 
 package ar.com.ariel17.quicksort;
@@ -15,7 +15,7 @@ import ar.com.ariel17.quicksort.pivot.impl.RandomPivotSelector;
 import ar.com.ariel17.quicksort.pivot.impl.ThreeInARowPivotSelector;
 
 /**
- * TODO
+ * Sort algorithm implementing the Quicksort strategy.
  *
  * @author Ariel Gerardo Ríos (ariel.gerardo.rios@gmail.com)
  */
@@ -31,9 +31,9 @@ public class Quicksort<T extends Comparable<? super T>> {
     }
 
     /**
-     * TODO
+     * The entry point for the program example.
      *
-     * @param args TODO
+     * @param args The program parameters.
      */
     public static void main (String [] args) {
         List<Integer> unsorted = Arrays.asList(5, 23, 4, 9, 77, 8, 7, 7, 48);
@@ -58,10 +58,10 @@ public class Quicksort<T extends Comparable<? super T>> {
     }
 
     /**
-     * TODO
+     * Sorts all elements on list using the quicksort strategy.
      *
-     * @param list TODO
-     * @return TODO
+     * @param list The list to be sorted.
+     * @return The sorted list.
      */
     public List<T> sort(List<T> list) {
 
@@ -73,6 +73,14 @@ public class Quicksort<T extends Comparable<? super T>> {
         return list;  // the list should be sorted now
     }
 
+    /**
+     * Sorts an specific partition of the list using the quicksort strategy.
+     *
+     * @param list The list to be sorted, containing the partition.
+     * @param pivot The pivot element, contained in list and pre-selected.
+     * @param minIndex The partition lower limit.
+     * @param maxIndex The partition higher limit.
+     */
     private void sortPartitions(List<T> list, Pivot<T> pivot, Integer minIndex,
             Integer maxIndex) {
         
@@ -141,7 +149,7 @@ public class Quicksort<T extends Comparable<? super T>> {
     }
 
     /**
-     * @param selector TODO
+     * @param selector The selector implementation to use.
      */
     public void setSelector(PivotSelector<T> selector) {
         this.selector = selector;
