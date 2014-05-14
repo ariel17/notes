@@ -1,7 +1,7 @@
 /**
  * ThreeInARowPivotSelector
  *
- * TODO Description if available.
+ * Pivote selector for "three in a row" strategy.
  */
 
 package ar.com.ariel17.quicksort.pivot.impl;
@@ -13,7 +13,8 @@ import ar.com.ariel17.quicksort.pivot.Pivot;
 import ar.com.ariel17.quicksort.pivot.PivotSelector;
 
 /**
- * TODO
+ * Selects an element as pivot using the "three in a row" strategy. It consists
+ * to take randomly 3 elements from the list and take the lowest as pivot.
  *
  * @author Ariel Gerardo Ríos (ariel.gerardo.rios@gmail.com)
  */

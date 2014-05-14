@@ -1,7 +1,7 @@
 /**
  * RandomPivotSelector
  *
- * TODO Description if available.
+ * A pivot selector implementation as random position generator.
  */
 
 package ar.com.ariel17.quicksort.pivot.impl;
@@ -13,7 +13,7 @@ import ar.com.ariel17.quicksort.pivot.Pivot;
 import ar.com.ariel17.quicksort.pivot.PivotSelector;
 
 /**
- * TODO
+ * Selects an element to use as pivot using a randomly generated position.
  *
  * @author Ariel Gerardo Ríos (ariel.gerardo.rios@gmail.com)
  */

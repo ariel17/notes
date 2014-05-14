@@ -331,3 +331,9 @@ epub_exclude_files = ['search.html']
 
 # If false, no index is generated.
 #epub_use_index = True
+
+# -- Custom side configuration ---------------------------------------
+slide_footer = 'Ariel Gerardo Rios'
+slide_theme_options = {
+    'custom_css': 'css/slide.css',
+}

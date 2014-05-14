@@ -1,11 +1,15 @@
 /**
  * Pivot
  *
- * TODO Description if available.
+ * A pivot implementation for the Quicksort algorithm.
  */
 
 package ar.com.ariel17.quicksort.pivot;
 
+/**
+ * The pivot implementation. Contains two elements: the item in list selected as
+ * point of reference (pivot) and the position on the list to order.
+ */
 public class Pivot<T> {
 
     private int index;
@@ -21,21 +25,21 @@ public class Pivot<T> {
     }
 
     /**
-     * @return TODO
+     * @return The index for the item inside list.
      */
     public int getIndex() {
         return index;
     }
 
     /**
-     * @param index TODO
+     * @param index The position of current item.
      */
     public void setIndex(int index) {
         this.index = index;
     }
 
     /**
-     * @return TODO
+     * @return The actual item value.
      */
     public T getItem() {
         return item;

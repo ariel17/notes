@@ -19,6 +19,11 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
+# Variables for custom commands
+UTNALGORITHMSDIR = ./utn/algoritmos_complejos/exposicion/presentacion
+UTNALGORITHMSOPTS = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) $(UTNALGORITHMSDIR)
+
+
 .PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext
 
 help:
@@ -45,6 +50,7 @@ help:
 	@echo "  pseudoxml  to make pseudoxml-XML files for display purposes"
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
+	@echo "  slides-utn-algorithms	to make the slides for UTN Complex Algorithms assignature"
 
 clean:
 	rm -rf $(BUILDDIR)/*
@@ -175,3 +181,7 @@ pseudoxml:
 	$(SPHINXBUILD) -b pseudoxml $(ALLSPHINXOPTS) $(BUILDDIR)/pseudoxml
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
+
+slides-utn-algorithms:
+	$(SPHINXBUILD) -b slides $(UTNALGORITHMSOPTS) $(BUILDDIR)/slides/utn-algorithms
+	@echo "Build finished. The HTML slides are in $(BUILDDIR)/slides/utn-algorithms."
