@@ -1,3 +1,25 @@
 h1 {
     margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 58px;
+    text-align: center;
+}
+
+img.border {
+   padding: 1px;
+   border: 1px solid #021a40;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+.title-initial {
+    margin-top: 200px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.title-finale {
+    margin-top: 100px;
 }
