@@ -83,3 +83,11 @@ Acto
 ----
 
 Hecho jurídico producido por el hombre, actuando.
+
+2014-05-15
+==========
+
+Revisión capítulos VI y VII.
+
+* **Patrimonio:** cosas (objeto material suceptible de valor económico) +
+  bienes (derechos).
