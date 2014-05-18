@@ -2,9 +2,6 @@
  Desarrollo
 ============
 
-.. toctree::
-   :maxdepth: 2
-
 Hecho jurídico
 ==============
 
