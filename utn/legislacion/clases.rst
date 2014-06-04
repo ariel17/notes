@@ -91,3 +91,9 @@ Revisión capítulos VI y VII.
 
 * **Patrimonio:** cosas (objeto material suceptible de valor económico) +
   bienes (derechos).
+
+2014-05-29
+==========
+
+Para estudiar contratos: utilizar títulos y subtítulos. Hay que entender cuál
+es la responsabilidad de cada parte.
