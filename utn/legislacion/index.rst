@@ -10,7 +10,8 @@
    ejercitacion
    resumen_libro/index
    autoevaluacion
-   trabajo_practico/index
+   trabajo_practico_i/index
+   trabajo_practico_ii/index
 
 Profesores
 ==========
