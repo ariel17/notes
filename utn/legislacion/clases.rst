@@ -97,3 +97,8 @@ Revisión capítulos VI y VII.
 
 Para estudiar contratos: utilizar títulos y subtítulos. Hay que entender cuál
 es la responsabilidad de cada parte.
+
+2014-06-04
+==========
+
+Hacer un cuadro comparativo de sociedad colectiva, S.R.L. y S.A. (variables).
