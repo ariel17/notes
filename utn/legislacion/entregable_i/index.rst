@@ -1,11 +1,11 @@
-====================
- Trabajo Práctico I
-====================
+==============
+ Entregable I
+==============
 
 Fecha de Entrega
 ================
 
-Jueves 2014-05-22
+Jueves 2014-06-12
 
 .. toctree::
    :maxdepth: 2
