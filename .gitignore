@@ -6,3 +6,6 @@ _build
 
 # Other IDE metadata
 workbench*
+
+# Lock fiels
+*lock*
