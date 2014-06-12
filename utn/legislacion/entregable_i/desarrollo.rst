@@ -2,6 +2,8 @@
  Desarrollo
 ============
 
+* :download:`Descargar en formato ODT <_static/doc/entregable_i.odt>`
+
 +-----------------+--------------------------+--------------------------+
 |     Nombre      |         Tipo             |   Capital Social         |
 |    Sociedad     |                          |                          |
