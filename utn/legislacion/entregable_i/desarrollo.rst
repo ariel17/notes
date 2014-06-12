@@ -3,6 +3,7 @@
 ============
 
 * :download:`Descargar en formato ODT <_static/doc/entregable_i.odt>`
+* :download:`Descargar en formato ODT <_static/doc/entregable_i.doc>`
 
 +-----------------+--------------------------+--------------------------+
 |     Nombre      |         Tipo             |   Capital Social         |
