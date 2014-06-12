@@ -12,6 +12,7 @@
    autoevaluacion
    trabajo_practico_i/index
    trabajo_practico_ii/index
+   entregable_i/index
 
 Profesores
 ==========
