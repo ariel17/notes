@@ -8,6 +8,7 @@
    clases
    ejercicios
    exposicion/index
+   monografias
 
 Profesores
 ==========
