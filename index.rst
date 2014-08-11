@@ -6,14 +6,23 @@
 Welcome to Ariel's Notes!
 =========================
 
-Contents:
+Before beginning:
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
 
    installation
    rst-cheatsheet
-   notes
+   latex/index
+
+Notes:   
+
+.. toctree::
+   :maxdepth: 2
+
+   coursera/index
+   offensive_security/index
+   utn/index
 
 Indices and tables
 ==================
