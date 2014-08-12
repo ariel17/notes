@@ -12,13 +12,13 @@ Installing basic requirements
 Assuming the operative system is Debian-like, the global requirements will be
 obtained using package manager.
 
-Installing git and pip
-----------------------
+Installing operative system requirements
+----------------------------------------
 
 .. code-block:: bash
    :linenos:
 
-   sudo apt-get install git pip
+   sudo apt-get install git pip dvipng
 
 Installing virtualenv
 ---------------------
