@@ -37,19 +37,19 @@ Material de ejercitación
 1er parcial
 -----------
 
-* Óptica geométrica: BF1AT3
+* :download:`Óptica geométrica: BF1AT3 <_static/bf1at3.pdf>`
 * Mecánica del punto
 
-  + Cinemática del punto material: BF1AT1
-  + Serie de problemas: dinámica del punto material: BF1AP4
+  + :download:`Cinemática del punto material: BF1AT1 <_static/bf1at1.pdf>`
+  + :download:`Serie de problemas: dinámica del punto material: BF1AP4 <_static/bf1ap4.pdf>`
 
-* Fluidos: mecánica de los fuidos: BF1AT4
+* :download:`Fluidos: mecánica de los fuidos: BF1AT4 <_static/bf1at4.pdf>`
 
 2do parcial
 -----------
 
-* Cuerpo rígido: problemas de dinámica del cuerpo rígido: BF1AP2
-* Movimiento oscilatorio armónico (movimiento armónico simple): BF1AT5
+* :download:`Cuerpo rígido: problemas de dinámica del cuerpo rígido: BF1AP2 <_static/bf1ap2.pdf>`
+* :download:`Movimiento oscilatorio armónico (movimiento armónico simple): BF1AT5 <_static/bf1at5.pdf>`
 
 Laboratorio
 -----------
