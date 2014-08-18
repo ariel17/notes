@@ -12,8 +12,9 @@ Before beginning:
    :maxdepth: 2
 
    installation
-   rst-cheatsheet
    latex/index
+   metapost
+   rst-cheatsheet
 
 Notes:   
 
