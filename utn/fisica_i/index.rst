@@ -2,9 +2,6 @@
  Física I
 ==========
 
-.. toctree::
-   :maxdepth: 2
-
 Profesores
 ==========
 
@@ -71,5 +68,13 @@ Aula
 ----
 
 7
+
+Contenido del curso
+===================
+
+.. toctree::
+   :maxdepth: 2
+
+   clases
 
 .. _`Videos: "El Universo Mecánico"`: https://www.youtube.com/watch?v=9z6_DEiGG8I&list=PL551412C2482CDE2A
