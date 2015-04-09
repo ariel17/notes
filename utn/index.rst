@@ -9,3 +9,4 @@
    fisica_i/index
    legislacion/index
    sistemas_operativos/index
+   diseño_de_sistemas/index
