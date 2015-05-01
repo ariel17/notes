@@ -1,52 +1,23 @@
-Diseño de Sistemas
-==================
+====================
+ Diseño de Sistemas
+====================
 
-Data Warehouse
---------------
+* Año: 2015
+* Curso: K3051
+* Profesor: Paola Saavedra Martínez
 
-Almacén de datos históricos sumarizados.
+Documentación
+=============
 
-.. code-block:: text
+* :download:`Estándar de calidad ISO-9126 (pdf) <_static/iso-9126.pdf>`
 
-   Business Inteligence
-          |
-          +---- DW: - Indicadores: ¿Qué queremos medir?
-          |         - Dimensiones (ventas, comisiones, etc)
-          |
-          +---- Data Mining
+Presentaciones
+==============
 
+* :download:`Diseño y sistemas (pdf) <_static/diseño_y_sistemas.pdf>`
+* :download:`Diseño y metodologías de desarrollo (pdf) <_static/metodologias.pdf>`
 
-.. code-block:: text
-                                                                     
-      Sistemas
-    operacionales                        E. T. L.           D.W.  <--
-   --------------- ===============> ---------------  ====>        <-- OLAP
-     datos fuente  Proceso de carga  - Extraen                    <-- 
-                                     - Transforman
-                                     - Cargan
+Trabajo práctico anual
+======================
 
-Data Mining
------------
-
-Descubrir patrones de comportamiento en los datos aplicando algún algoritmo.
-
-CRM
----
-
-Es una estrategia que permite administrar todas las relaciones con los 
-clientes.
-
-.. code-block:: text
-
-   Ventas ---------
-                   \ +-------------+
-   Servicio -------- |Cliente único|
-                   / +-------------+
-   Marketing ------     |
-                        |
-                   Multimedios
-
-ERP
----
-
-Da soporte a las operaciones de backoffice. 
+* :download:`Entrega 1 (pdf) <_static/tpa1.pdf>`
