@@ -314,6 +314,9 @@ book is about to an agent.
 Assignment: The Escalator
 -------------------------
 
+Instructions
+~~~~~~~~~~~~
+
 Write a scene of 250-350 words featuring a character with one concrete want (a
 table, a moose, a toothbrush, anything physical is fine!) and one weakness. Use
 these two features to drive the action of the plot. Set up the story where
@@ -325,19 +328,57 @@ following twelve words. Write your third sentence, which may introduce the
 weakness, then write your fourth sentence with a rising action that includes
 one of the remaining eleven words you haven’t used. And so on.
 
-* trick
-* memory
-* aboard
-* tiger
-* pretend
-* carrot
-* appliance
-* cage
-* rings
-* crow
-* filthy
-* explode
+* *trick*
+* *memory*
+* *aboard*
+* *tiger*
+* *pretend*
+* *carrot*
+* *appliance*
+* *cage*
+* *rings*
+* *crow*
+* *filthy*
+* *explode*
 
 You must use at least 6 of the 12 words, but you are encouraged to challenge
 yourself to use as many of the words as possible while still meeting the word
 count.
+
+Own development
+~~~~~~~~~~~~~~~
+
+* *truco* ✓
+* *memoria* ✓
+* *abordo*
+* *tigre* ✓
+* *pretende* ✓
+* *zanahoria*
+* *aplicante* ✓
+* *jaula* ✓
+* *anillos* ✓
+* *multitud* ✓
+* *inmundo* ✓
+* *explotar* ✓
+
+Ismael necesitaba ese cepillo de dientes; era de su amante. Ya no podía
+**pretender** más que no sucedía nada, el sudor en su cuello lo delató y su
+mujer puso su mirada, la que torturaba su alma hasta delatarse. 20 años de
+convivencia le habían dado a su esposa el debido control sobre su debilidad:
+hacerlo **explotar** con las vedades, helando su alma con la mirada más azul
+que podía poner. Si la **memoria** no le fallaba, el cepillo salía del bolsillo
+del pantalón (el que puso a las apuradas) porque lo vió fugazmente al cerrar la
+tapa de la valija, porque su rostro se puso blanco y supo qué le deparaba el
+destino en cuanto llegaran al hotel. La habitación será su **jaula** y el
+**tigre** estará con él, esperando las explicaciones que escribió en los
+papeles de su mente en los viajes de regreso a su casa, cuando volvía tarde.
+Pero su esposa corrió la vista a los **anillos** de su mano izquierda. Le llamó
+la atención ese movimiento más que cualquier otro de la **multitud**: ¿acaso
+era ella la que tenía que decirle algo? Quizás hubiera esta segunda vuelta era
+una mala idea... pero no, no importaba, estaba perdiendo el foco de lo quera
+importante: el cepillo. El puerto se aproximaba, ya podía verlo a simple vista,
+y aún no tenía un **truco** para hacerse con la evidencia y sentirse menos
+**inmundo**. Las preocupaciones existenciales de su mujer podrían atenderse
+cuando se encontraran con el **aplicante** que vinieron a conocer.
+
+Total: 253 words.
