@@ -9,4 +9,4 @@ On line course provided by Wesleyan University.
 .. toctree::
    :maxdepth: 2
 
-   the-craft-of-plot
+   the-craft-of-plot/index
