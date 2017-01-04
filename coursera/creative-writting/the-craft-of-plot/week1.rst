@@ -27,7 +27,7 @@ The English author Forster defines the difference:
 .. image:: https://web.cn.edu/kwheeler/images/Freytag.jpg
 
 **Exposition**
-  Give your initial important background information about the story. Example:
+  Gives your initial important background information about the story. Example:
   you can tell your readers information about setting, events that have
   occurred before the main plot of your story. Back story information about
   your characters, any information that might provide context for what your
@@ -217,99 +217,90 @@ questions you should ask when creating a great dynamic character:
 **What do they want?**
   This is the first and most fundamental question you have to answer when
   creating a good character. All great characters want something. Kurt
-  Vonnegut, author of Slaughterhouse Five and many other great novels and
+  Vonnegut, author of "Slaughterhouse Five" and many other great novels and
   stories wrote that the first step in writing a good story was creating a
-  character that wanted something. Even if that something was a simply a drink
+  character that wanted something, even if that something was a simply a drink
   of water. Desire is a crucial component in creating a believable that we can
-  follow. This is different from a character that needs something: a character
-  that needs something is fate, a character that wants something is will.
+  follow. This is different from a character that needs something: **a
+  character that needs something is fate, a character that wants something is
+  will.**
 
 **What are their weaknesses?**
   Many writers give their characters traits that make them honorable, virtuous,
   and in many cases invulnerable. Now while you may want to hang out with
   someone who's honorable or virtuous in real life, we don't really make for
   interesting characters on the page. Think of the list of the greatest
-  characters in fiction: J Gatsby from The Great Gatsby, Holden Caulfield from
-  The Catcher in the Rye, Harry Potter from the Harry Potter series. Each of
-  these characters were more interesting to follow and to read about because of
-  their weaknesses, not their strengths. Superman isn't an interesting
-  character because he's invulnerable, Superman's an interesting character
-  because he's vulnerable to kryptonite. So when compiling a list of traits for
-  your characters, make sure that their weaknesses are more interesting than
-  their strengths. 
+  characters in fiction: J. Gatsby from "The Great Gatsby", Holden Caulfield
+  from "The Catcher in the Rye", Harry Potter from the "Harry Potter" series.
+  Each of these characters were more interesting to follow and to read about
+  because of their weaknesses, not their strengths. Superman isn't an
+  interesting character because he's invulnerable, Superman's an interesting
+  character because he's vulnerable to kryptonite. So when compiling a list of
+  traits for your characters, make sure that their weaknesses are more
+  interesting than their strengths. 
 
 **Where are they from?**
   There's both a literal answer for this and a deeper, more emotional answer.
-  First the literal. What are your characters biographical information? What
+  First the literal: what are your characters biographical information? What
   city, state, town, or country are they from? Did they grow up as a kid on the
   streets of New York City or were they born and raised in a farm in Indiana?
   Understanding this biographical information helps inform us of what a
   character wants because it can help us understand where they came from.
   
-  Then, there's the more emotional answer.
-  
-**Where are they from?**
-  As in, what is their emotional background? Did they have two loving parents?
-  Or were they raised by a single, overworked mother? Did they lose a sister
-  when they were very young? Were they bullied in junior high? Where are they
-  from emotionally helps us understand a character's motivation for acting the
-  way that they do. And it can be instrumental in helping us understand why a
-  character desires a particular thing.
+  Then, there's the more emotional answer; *where are they from?* As in, what
+  is their emotional background? Did they have two loving parents? Or were they
+  raised by a single, overworked mother? Did they lose a sister when they were
+  very young? Were they bullied in junior high? Where are they from emotionally
+  helps us understand a character's motivation for acting the way that they do.
+  And it can be instrumental in helping us understand why a character desires a
+  particular thing.
   
   It's also crucial in helping us answer the next question.
   
 **Where are they going?**
-
   Pairing this question with where are they from gives you a complete character
   arc. That is, if I know why a character wants a particular thing and I
   understand where they're from, I have an understanding, not only of how hard
   they're going to try to get what they want, but how resilient they'll be when
-  rising actions are put in their way to obstruct their path. I'll get to
-  rising actions in a second.
+  rising actions are put in their way to obstruct their path.
   
   Last,
   
 **what can your characters do to surprise you?**
-  Now this may sound weird, but characters sometimes don't do what we expect
-  them to do when we put them on the page. They act in a more resourceful way
-  than you imagine. Or if they suspect they were walking into an ambush in a
-  dark room, they might decide, just like an actual person, not to go into that
-  room. Look for places in your story where your characters do things you
-  didn't expect them to do, and encourage your characters by following them
-  instead of trying to lead them. 
+  Characters sometimes don't do what we expect them to do when we put them on
+  the page. They act in a more resourceful way than you imagine. Or if they
+  suspect they were walking into an ambush in a dark room, they might decide,
+  just like an actual person, not to go into that room. Look for places in your
+  story where your characters do things you didn't expect them to do, and
+  encourage your characters by following them instead of trying to lead them. 
 
-Now that you have a rough idea of what a character should look like, it's time
-to give that character something to do. That's where rising actions come in.
-Here is a simplest way to define what exactly is a rising action:
+With a rough idea of what a character should look like, it's time to give that
+character something to do: that's where rising actions come in. Here is a
+simplest way to define what exactly is a rising action:
 
-* Your main character wants something. Some obstacle, it can be another thing,
-  another character, your main character's own flaws, gets in your main
+* *Your main character wants something.* Some obstacle, it can be another
+  thing, another character, your main character's own flaws, gets in your main
   character's way of getting that one thing your character wants. 
 
-* Those obstacles are rising actions. Your character overcomes these obstacles,
-  these rising actions only to encounter even larger obstacles on the next
-  level or in the next chapter. 
+* *Those obstacles are rising actions.* Your character overcomes these
+  obstacles, these rising actions only to encounter even larger obstacles on
+  the next level or in the next chapter; that's the next rising action.
+  
+* *Keep overcoming rising actions* like levels in a video game,
+  until they reach the place where they can try and get what they want. 
 
-* That's the next rising action. So, like levels in a video game, your
-  character has to keep overcoming obstacles. They have to keep overcoming
-  rising actions until they reach the place where they can try and get what
-  they want. 
+Once you have your character and your action, you essentially have the plot of
+your novel. To summarize plot, you will need *the inciting incident, a
+character, the obstacle, and the quest.*
 
-* Once you have your character and your action, you essentially have the plot
-  of your novel. 
+Puting it all together
+----------------------
 
-Here's the best way I know to summarize plot, or the best way to answer someone
-when they ask what your book is about. For this you'll need the inciting
-incident, a character, the obstacle, and the quest.
-
-Now how do you put it all together? 
-
-When an inciting incident happens to character, they have to overcome conflict
-slash obstacles, to complete quest. Now there are a lot of different ways of
-structuring these basic elements, but that set up right there is the most
-efficient way that I know to put them all together. This sentence construction
-is also often called a pitch. That is the shorthand way to describe what your
-book is about to an agent.
+When an inciting incident happens to character, they have to overcome conflict,
+slash obstacles, to complete quest. That set up right there is the most
+efficient way to put them all together. This sentence construction is also
+often called a pitch. That is the shorthand way to describe what your book is
+about to an agent.
 
 Assignment: The Escalator
 -------------------------

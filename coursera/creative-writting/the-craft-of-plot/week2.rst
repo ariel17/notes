@@ -5,8 +5,8 @@
 What is structure?
 ------------------
 
-Aristotle was an ancient Greek philosopher who wrote a book called Poetics,
-where he argued plot or mythos was the most important element of drama.
+Aristotle was an ancient Greek philosopher who wrote a book called "Poetics",
+where he argued plot or *mythos* was the most important element of drama.
 Aristotle is credited with inventing the three act structure:
 
 **The beginning**
@@ -21,25 +21,24 @@ Aristotle is credited with inventing the three act structure:
 
 Today, modern screenplay writers use a three act structure when putting
 together scripts. The ancient Roman lyric poet Horace can be given credit for
-devising the five act structure. In a poem called Ars Poetica, Horace offers
+devising the five act structure. In a poem called "Ars Poetica", Horace offers
 advice on how to write poetry and drama. Specifically, he argued that a play
 should not be longer or shorter than five acts.
 
-In talking about structure for novels and short stories, I also follow a five
-act structure, that while owing credit to Aristotle and Horace, is a lot more
-modern. Emma Mott is an American author who wrote a wonderful book on the craft
-of writing called Bird by Bird. In it, she describes a conversation that she
-had with the novelist, Alice Adams about a unique five act structure Alice uses
-called **A B D C E**. Let's take a look at what each one of these letters
-stands for:
+About structure for novels and short stories, the five act structure, that
+while owing credit to Aristotle and Horace, is a lot more modern. Emma Mott is
+an American author who wrote a wonderful book on the craft of writing called
+"Bird by Bird". In it, she describes a conversation that she had with the
+novelist Alice Adams about a unique five act structure Alice uses called **A B
+D C E**:
 
-**A stands for action**
+**A stands for Action**
   Action is what draws the reader in. It's something specific and concrete.
   Lots of stories open up with a character thinking about something or doing
   something passive. That's not an action, an action is something physical that
   involves a character doing something. 
 
-**B is for background**
+**B is for Background**
   Background is essentially context, or what was happening to these characters
   before the story started. This is the part of the story where we get
   essential and vital information that will help us determine the character's
@@ -52,13 +51,13 @@ stands for:
   themselves and their responses in either succeeding or failing to overcome
   the obstacles in their path. 
 
-**C stands for climax**
+**C stands for Climax**
   The climax is where the biggest rising action happens in your story. This is
   the place where the key narrative twist in your story happens. And because of
   that twist, things are different for your main characters in a real and
   significant way. 
 
-**E is for your ending**
+**E is for your Ending**
   This is where we learn that the characters we thought we knew have become
   someone else because of their journey. 
 
@@ -95,7 +94,7 @@ maintenance, but Bugens has been with you for years and has helped you through
 many crises. And because of the promise you made to your dead brother, the war
 veteran, getting rid of Bugens isn't an option. 
 
-Now remember, the development is where you outline what your characters want
+Now remember: the development is where you outline what your characters want
 and what's standing in their way. 
 
 Now it's time for the climax, this is the key narrative twist in your story.
@@ -220,6 +219,108 @@ Harry Potter & the Sorcerer's Stone
   and Gryffindor wins the house cup. Harry returns home to the Dursleys for the
   summer without letting them know he's not allowed to use magic outside of
   school. 
+
+
+
+Visiting Writer: How Structure and Outlines Can Help Organize Your Plot and the Story You Want to Tell
+------------------------------------------------------------------------------------------------------
+
+* Interviewer: Brandon Skyhorse
+* Interviewed: Douglas Martin
+
+Questions
+~~~~~~~~~
+
+* **Many young writers don't outline because they don't see the point or don't
+  know where the story is going until they get there. Is it ever a good idea to
+  start writing in earnest without an outline? Can you benefit from doing an
+  outline later in the writing process?**
+  
+  I think the most important thing is to begin writing, definitely. So if
+  there's not an outline, that should not stop you from getting down. Sitting
+  down at the desk. I think the outline is kind of there as a safety net for
+  me, and to hold me a bit.
+  
+* **How does that process work for you?**
+  
+  I think about it as like it's kind of the next thread that I'm going to pick
+  up the next day. So you're not staring at, like, blank space, the blank desk,
+  the blank page, but like this particular point is going to be my launching
+  pad, you know? Not necessarily the goal, but, like, the set off. Right?
+  
+  My first novel, ironically called Outline of My Lover. The outline is a
+  formal and ironic conceit. And that was imposed later. It was after many
+  months of doing what I call and think of as *blind writing*: the important
+  thing for me was to write a certain number of pages or a certain number of
+  hours everyday and not think about particularly where I was going. And the
+  downfall of that, or the downside of that, if there is one, is that you end
+  up throwing away half of your pages. So in going back over a manuscript that
+  I think in pages, not word count particularly, but going back over a
+  manuscript that was about 300 pages turned into a novel that was about 120.
+  So a lot of redundancies, but I think if you don't allow yourself that space
+  forward redundancy, you won't find the surprising stuff.
+  
+* **Let's say you have a writer that's never written an outline before. What
+  guidelines can you offer them to get them started?**
+ 
+  I think it's not a bad idea to look at people that you yourself are impressed
+  by. Work that has particularly moved you and to outline those stories
+  themselves and then try to use that as a blueprint. And see where the
+  analogous spaces in your own work might be.
+  
+* **Douglas is suggesting to take a story, or a narrative, or a book that is a
+  favorite of yours and just outline it out and see where the beats are. J. K.
+  Rowling broke her outlines down into little grid boxes chapter by chapter and
+  Faulkner wrote broad ideas on the walls of his office. If you over outline,
+  do you run the risk of shifting from a writer to a translator of your work?
+  Is there such a thing as too much outlining slowing the creative process?**
+ 
+  I think that I'm way more Faulkner than J. K. Rowling to begin with and we
+  should all have the liberty, the leisure, and the space to be able to write
+  on our walls. You don't want to back yourself into a corner. So for me like
+  an outline is always kind of like a big kind of bullet point. And it's kind
+  of like almost a title to a painting that you're meant to create. So, I can
+  see the wall thing, I've done that myself. This is this particular moment in
+  time. Then you can quite physically move in space.
+  
+* **Do you use different colored sheets or how would your wall look like?**
+ 
+  Like different colored markers and definitely part of me outline or finding
+  the form within my lined, writing manuscripts is color coding. For sure and
+  so then it's pulling together all of the things that have been keyed to red
+  for whatever reason. And then to begin to just arrange those elements. So
+  having little particular boxes or walls or grids in the J. K. Rowling thing
+  that you can work within. But not being so tied to the road within there, the
+  A to the B, but rather allowing yourself to move the pieces back and forth of
+  each other. I mean, it's really hard for me to think about writing without
+  the particular medium that it happens in. And now thinking about writing on a
+  computer. I think when you cut and paste and move this paragraph below this
+  one or above that one around, you're doing a sense of active outlining. And
+  so that's a kind of thing that I do, you know on my feet a kind of active
+  outlining. There's a lot of numbering of files that tends to happen. A
+  particular Word document that becomes two or one orders and have the
+  experience of that.
+  
+* **In the process of outlining, where have you made your most exciting
+  discoveries?**
+
+  When a particular bullet point has ceased to land, and I've gone into, I'm
+  going to go be on this thing and knowing that I'm meant to be on that thing
+  and I can't quite it's the liberty to be at the side of the thing that's
+  holding me. That's, you know Doctora has that thing about writing a novel's
+  like driving on a dark highway with only the headlights in front of you. I
+  think that's a fine thing, but what if you actually don't want to be in the
+  car, be on the road. So the outlines are kind of not like the seat belt
+  necessarily, but like is it a way to make sure that you get your destination
+  in a more expedient way. Like you perhaps drive during the day as supposed to
+  night or like.  It's a map too and you can't be afraid to actually fly off or
+  tunnel down. Right, and I think that's when the online goes wrong when it
+  becomes a very efficient profundity A to B to C. And you have to allow for
+  the footnotes. You have to allow for the subtitles to be outlined. The side
+  outline.
+  
+  Basically giving a structure, but at the same time also allowing for a
+  certain degree of fluidity, as well.
 
 Assignment: What's up, Doc?
 ---------------------------
