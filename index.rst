@@ -24,6 +24,7 @@ Notes:
    coursera/index
    offensive_security/index
    utn/index
+   guitarra/index
 
 Indices and tables
 ==================
